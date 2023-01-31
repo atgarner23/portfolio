@@ -6,13 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andy Garner Web Portfolio</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-blue text-white font-sans">
     <div class="container flex">
-        <nav class="main-nav">
+        <nav class="main-nav bg-blue-dark h-screen px-10 flex flex-col justify-around font-serif">
             <h1 class="logo">A.Garner Designs</h1>
-            <ul class="nav-list">
+            <ul class="nav-list flex flex-col justify-around h-1/2">
                 <li class="nav-list-item"><a href="#works" class="nav-list-link">Works</a></li>
                 <li class="nav-list-item"><a href="#projects" class="nav-list-link">Projects</a></li>
                 <li class="nav-list-item"><a href="#contact" class="nav-list-link">Contact</a></li>
@@ -24,14 +30,21 @@
             <!-- need to figure out he decorative corners -->
             <p class="email"><a href="mailto:hiring@agarnerdesigns.com" class="email-link">hiring@agarnerdesigns.com</a>
             </p>
-            <div class="main-card">
+
+            <!-- gsap scroll trigger -->
+            <section class="main-card">
                 <h2 class="card-title">Andy Garner</h2>
                 <h3 class="card-sub-title">Junior Web Developer</h3>
                 <div class="card-content">
-                    <p class="about-me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit illum saepe nisi,
-                        porro, possimus facere dolor soluta iusto officiis enim ipsa vitae a, ad vel.</p>
+                    <p class="about-me">Recent college graduate and Navy veteran seeking a role as a Junior Web
+                        Developer to showcase my skills and learn leading industry practices while growing my knowledge
+                        and skillset. I am proficient in HTML, CSS, JavaScript, and PHP and familiar with WordPress. I
+                        am dedicated to learning and actively strive to be on the cutting edge of the industry best
+                        practices to help bring a semantic, accessible, and fast experience to the end user. I enjoy
+                        troubleshooting code to find creative fixes and work around to put forth the most optimized
+                        product that I can.</p>
                 </div>
-            </div>
+            </section>
             <!-- Second decorative corner -->
             <small class="copyright">&copy;2023 A.Garner Designs</small>
         </main>

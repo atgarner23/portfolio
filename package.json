@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My Website Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atgarner23/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atgarner23/portfolio/issues"
+  },
+  "homepage": "https://github.com/atgarner23/portfolio#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
