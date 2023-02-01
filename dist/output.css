@@ -653,6 +653,11 @@ video {
   clear: none;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -753,8 +758,52 @@ video {
   height: 100vh;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
 .h-1\/2 {
   height: 50%;
+}
+
+.h-96 {
+  height: 24rem;
+}
+
+.h-\[75\%\] {
+  height: 75%;
+}
+
+.h-\[50vh\] {
+  height: 50vh;
+}
+
+.h-\[60vh\] {
+  height: 60vh;
+}
+
+.h-\[70vh\] {
+  height: 70vh;
+}
+
+.h-\[75vh\] {
+  height: 75vh;
+}
+
+.w-\[10\%\] {
+  width: 10%;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
+.max-w-5xl {
+  max-width: 64rem;
 }
 
 .flex-shrink {
@@ -1245,6 +1294,18 @@ video {
   justify-items: stretch;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -1566,6 +1627,10 @@ video {
   border-width: 1px;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
 .border-x {
   border-left-width: 1px;
   border-right-width: 1px;
@@ -1614,6 +1679,11 @@ video {
 
 .border-none {
   border-style: none;
+}
+
+.border-teal {
+  --tw-border-opacity: 1;
+  border-color: rgb(51 186 157 / var(--tw-border-opacity));
 }
 
 .bg-blue {
@@ -1741,9 +1811,8 @@ video {
      object-fit: scale-down;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+.p-10 {
+  padding: 2.5rem;
 }
 
 .text-left {
@@ -1810,8 +1879,22 @@ video {
   font-family: "Alfa Slab One", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .font-bold {
   font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .uppercase {
@@ -1887,8 +1970,18 @@ video {
   color: rgb(230 244 247 / var(--tw-text-opacity));
 }
 
+.text-orange {
+  --tw-text-opacity: 1;
+  color: rgb(235 167 48 / var(--tw-text-opacity));
+}
+
 .text-\[\#336699\]\/\[\.35\] {
   color: rgb(51 102 153 / .35);
+}
+
+.text-teal {
+  --tw-text-opacity: 1;
+  color: rgb(51 186 157 / var(--tw-text-opacity));
 }
 
 .underline {

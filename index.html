@@ -12,12 +12,20 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@300;400;600;700&display=swap"
         rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
+
 </head>
 
 <body class="bg-blue text-white font-sans">
-    <div class="container flex">
-        <nav class="main-nav bg-blue-dark h-screen px-10 flex flex-col justify-around font-serif">
-            <h1 class="logo">A.Garner Designs</h1>
+    <div class="flex h-screen">
+        <nav class="main-nav bg-blue-dark  w-[10%] flex flex-col justify-around font-serif items-center">
+
+            <a href="#home" class="blcok w-12 h-12">
+                <img src="./assets/img/Asset 1.svg" alt="A. Garner Designs">
+            </a>
+
             <ul class="nav-list flex flex-col justify-around h-1/2">
                 <li class="nav-list-item"><a href="#works" class="nav-list-link">Works</a></li>
                 <li class="nav-list-item"><a href="#projects" class="nav-list-link">Projects</a></li>
@@ -26,27 +34,56 @@
             </ul>
             <a href="http://www.github.com/atgarner23" class="nav-social">Github</a>
         </nav>
-        <main class="main-body">
+        <main class="main-body p-10 flex flex-col justify-between mx-auto max-w-5xl">
             <!-- need to figure out he decorative corners -->
-            <p class="email"><a href="mailto:hiring@agarnerdesigns.com" class="email-link">hiring@agarnerdesigns.com</a>
+            <p class="email text-orange self-end"><a href="mailto:hiring@agarnerdesigns.com"
+                    class="email-link">hiring@agarnerdesigns.com</a>
             </p>
 
             <!-- gsap scroll trigger -->
-            <section class="main-card">
-                <h2 class="card-title">Andy Garner</h2>
-                <h3 class="card-sub-title">Junior Web Developer</h3>
-                <div class="card-content">
-                    <p class="about-me">Recent college graduate and Navy veteran seeking a role as a Junior Web
-                        Developer to showcase my skills and learn leading industry practices while growing my knowledge
-                        and skillset. I am proficient in HTML, CSS, JavaScript, and PHP and familiar with WordPress. I
-                        am dedicated to learning and actively strive to be on the cutting edge of the industry best
-                        practices to help bring a semantic, accessible, and fast experience to the end user. I enjoy
-                        troubleshooting code to find creative fixes and work around to put forth the most optimized
-                        product that I can.</p>
-                </div>
-            </section>
+            <div class="scroll-box overflow-auto">
+                <!--this starts the actual scrollable box-->
+                <section class="main-card flex justify-around items-center gap-6 h-[75vh]">
+                    <div class="flex flex-col gap-8">
+                        <div>
+                            <h2 class="card-title font-serif text-6xl">Andy Garner</h2>
+                            <h3 class="card-sub-title font-sans font-semibold text-3xl text-teal">Junior Web Developer
+                            </h3>
+                        </div>
+                        <p class="about-me">Recent college graduate and Navy veteran seeking a role as a Junior Web
+                            Developer to showcase my skills and learn leading industry practices while growing my
+                            knowledge
+                            and skillset. I am proficient in HTML, CSS, JavaScript, and PHP and familiar with WordPress.
+                            I
+                            am dedicated to learning and actively strive to be on the cutting edge of the industry best
+                            practices to help bring a semantic, accessible, and fast experience to the end user. I enjoy
+                            troubleshooting code to find creative fixes and work around to put forth the most optimized
+                            product that I can.</p>
+                    </div>
+                    <img src="./assets/img/headshot_cropped.png" alt="Portrait of Andy Garner" class="w-96 h-96 block">
+                </section>
+                <section class="main-card flex justify-around items-center gap-6 h-screen">
+                    <div class="flex flex-col gap-8">
+                        <div>
+                            <h2 class="card-title font-serif text-6xl">Andy Garner</h2>
+                            <h3 class="card-sub-title font-sans font-semibold text-3xl text-teal">Junior Web Developer
+                            </h3>
+                        </div>
+                        <p class="about-me">Recent college graduate and Navy veteran seeking a role as a Junior Web
+                            Developer to showcase my skills and learn leading industry practices while growing my
+                            knowledge
+                            and skillset. I am proficient in HTML, CSS, JavaScript, and PHP and familiar with WordPress.
+                            I
+                            am dedicated to learning and actively strive to be on the cutting edge of the industry best
+                            practices to help bring a semantic, accessible, and fast experience to the end user. I enjoy
+                            troubleshooting code to find creative fixes and work around to put forth the most optimized
+                            product that I can.</p>
+                    </div>
+                    <img src="./assets/img/headshot_cropped.png" alt="Portrait of Andy Garner" class="w-96 h-96 block">
+                </section>
+            </div>
             <!-- Second decorative corner -->
-            <small class="copyright">&copy;2023 A.Garner Designs</small>
+            <small class="copyright self-end">&copy;2023 A.Garner Designs</small>
         </main>
     </div>
 </body>
