@@ -2,90 +2,238 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andy Garner Web Portfolio</title>
-    <link href="/dist/output.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@300;400;600;700&display=swap"
-        rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andy Garner Web Portfolio</title>
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
 
 </head>
 
 <body class="bg-blue text-white font-sans">
-    <div class="flex h-screen">
-        <nav class="main-nav bg-blue-dark  w-[10%] flex flex-col justify-around font-serif items-center">
+  <div class="flex h-screen">
+    <nav class="main-nav bg-blue-dark  w-[10%] flex flex-col justify-around font-serif items-center">
 
-            <a href="#home" class="blcok w-12 h-12">
-                <img src="./assets/img/Asset 1.svg" alt="A. Garner Designs">
-            </a>
+      <a href="index.html" class="blcok w-12 h-12">
+        <img src="./assets/img/Asset 1.svg" alt="A. Garner Designs">
+      </a>
 
-            <ul class="nav-list flex flex-col justify-around h-1/2">
-                <li class="nav-list-item"><a href="#works" class="nav-list-link">Works</a></li>
-                <li class="nav-list-item"><a href="#projects" class="nav-list-link">Projects</a></li>
-                <li class="nav-list-item"><a href="#contact" class="nav-list-link">Contact</a></li>
-                <li class="nav-list-item"><a href="#resume" class="nav-list-link">Resume</a></li>
-            </ul>
-            <a href="http://www.github.com/atgarner23" class="nav-social">Github</a>
-        </nav>
-        <main class="main-body p-10 flex flex-col justify-between mx-auto max-w-5xl">
-            <!-- need to figure out he decorative corners -->
-            <p class="email text-orange self-end"><a href="mailto:hiring@agarnerdesigns.com"
-                    class="email-link">hiring@agarnerdesigns.com</a>
-            </p>
+      <ul class="nav-list flex flex-col justify-around h-1/2">
+        <li class="nav-list-item"><a href="#works" class="nav-list-link">Works</a></li>
+        <li class="nav-list-item"><a href="#projects" class="nav-list-link">Projects</a></li>
+        <li class="nav-list-item"><a href="#contact" class="nav-list-link">Contact</a></li>
+        <li class="nav-list-item"><a href="#resume" class="nav-list-link">Resume</a></li>
+      </ul>
+      <a href="http://www.github.com/atgarner23" class="nav-social">Github</a>
+    </nav>
+    <main class="main-body p-10 flex flex-col justify-between mx-auto max-w-5xl">
+      <!-- need to figure out he decorative corners -->
+      <p class="email text-orange self-end"><a href="mailto:hiring@agarnerdesigns.com"
+          class="email-link">hiring@agarnerdesigns.com</a>
+      </p>
 
-            <!-- gsap scroll trigger -->
-            <div class="scroll-box overflow-auto">
-                <!--this starts the actual scrollable box-->
-                <section class="main-card flex justify-around items-center gap-6 h-[75vh]">
-                    <div class="flex flex-col gap-8">
-                        <div>
-                            <h2 class="card-title font-serif text-6xl">Andy Garner</h2>
-                            <h3 class="card-sub-title font-sans font-semibold text-3xl text-teal">Junior Web Developer
-                            </h3>
-                        </div>
-                        <p class="about-me">Recent college graduate and Navy veteran seeking a role as a Junior Web
-                            Developer to showcase my skills and learn leading industry practices while growing my
-                            knowledge
-                            and skillset. I am proficient in HTML, CSS, JavaScript, and PHP and familiar with WordPress.
-                            I
-                            am dedicated to learning and actively strive to be on the cutting edge of the industry best
-                            practices to help bring a semantic, accessible, and fast experience to the end user. I enjoy
-                            troubleshooting code to find creative fixes and work around to put forth the most optimized
-                            product that I can.</p>
-                    </div>
-                    <img src="./assets/img/headshot_cropped.png" alt="Portrait of Andy Garner" class="w-96 h-96 block">
-                </section>
-                <section class="main-card flex justify-around items-center gap-6 h-screen">
-                    <div class="flex flex-col gap-8">
-                        <div>
-                            <h2 class="card-title font-serif text-6xl">Andy Garner</h2>
-                            <h3 class="card-sub-title font-sans font-semibold text-3xl text-teal">Junior Web Developer
-                            </h3>
-                        </div>
-                        <p class="about-me">Recent college graduate and Navy veteran seeking a role as a Junior Web
-                            Developer to showcase my skills and learn leading industry practices while growing my
-                            knowledge
-                            and skillset. I am proficient in HTML, CSS, JavaScript, and PHP and familiar with WordPress.
-                            I
-                            am dedicated to learning and actively strive to be on the cutting edge of the industry best
-                            practices to help bring a semantic, accessible, and fast experience to the end user. I enjoy
-                            troubleshooting code to find creative fixes and work around to put forth the most optimized
-                            product that I can.</p>
-                    </div>
-                    <img src="./assets/img/headshot_cropped.png" alt="Portrait of Andy Garner" class="w-96 h-96 block">
-                </section>
+      <!-- gsap scroll trigger -->
+      <div class="scroll-box overflow-auto snap-y snap-mandatory">
+        <!--this starts the actual scrollable box-->
+        <section id="about" class="main-card flex justify-around items-center gap-6 h-screen snap-start">
+          <div class="flex flex-col gap-8">
+            <div>
+              <h2 class="card-title font-serif text-6xl">Andy Garner</h2>
+              <h3 class="card-sub-title font-sans font-semibold text-3xl text-teal">Junior Web Developer
+              </h3>
             </div>
-            <!-- Second decorative corner -->
-            <small class="copyright self-end">&copy;2023 A.Garner Designs</small>
-        </main>
-    </div>
+            <p class="about-me">Recent college graduate and Navy veteran seeking a role as a Junior Web
+              Developer to showcase my skills and learn leading industry practices while growing my
+              knowledge
+              and skillset. I am proficient in HTML, CSS, JavaScript, and PHP and familiar with WordPress.
+              I
+              am dedicated to learning and actively strive to be on the cutting edge of the industry best
+              practices to help bring a semantic, accessible, and fast experience to the end user. I enjoy
+              troubleshooting code to find creative fixes and work around to put forth the most optimized
+              product that I can.</p>
+          </div>
+          <img src="./assets/img/headshot_cropped.png" alt="Portrait of Andy Garner" class="w-96 h-96 block">
+        </section>
+        <section id="works" class="main-card h-screen snap-start">
+          <h2 class="font-serif text-6xl">Works</h2>
+          <div class="tabbed">
+            <ul class="sub-nav flex">
+              <li class="sub-items py-5 px-10 bg-blue-light rounded-t-lg">TSMM</li>
+              <li class="sub-items py-5 px-10">Psychedelia Britannia</li>
+              <li class="sub-items py-5 px-10">Off Street Tacos</li>
+            </ul>
+            <div class="case-study flex bg-blue-light p-10 rounded-xl rounded-tl-none">
+              <div class="study-content">
+                <h3 class="study-title">The Sober Military Movement</h3>
+                <p class="study-sub-title"><b>Project:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Dolores cupiditate, quo ab eius modi enim voluptatum aliquid nesciunt cum inventore illum, perferendis
+                  sequi animi similique?</p>
+                <p class="study-sub-title"><b>Project:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Dolores cupiditate, quo ab eius modi enim voluptatum aliquid nesciunt cum inventore illum, perferendis
+                  sequi animi similique?</p>
+                <p class="study-sub-title"><b>Project:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Dolores cupiditate, quo ab eius modi enim voluptatum aliquid nesciunt cum inventore illum, perferendis
+                  sequi animi similique?</p>
+                <p class="study-sub-title"><b>Project:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Dolores cupiditate, quo ab eius modi enim voluptatum aliquid nesciunt cum inventore illum, perferendis
+                  sequi animi similique?</p>
+                <p class="study-sub-title"><b>Project:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Dolores cupiditate, quo ab eius modi enim voluptatum aliquid nesciunt cum inventore illum, perferendis
+                  sequi animi similique?</p>
+              </div>
+              <div class="study-cta">
+                <img src="https://placeimg.com/640/640/tech" alt="Placeholder image">
+                <div class="study-btns">
+                  <button>Repo</button>
+                  <button>Site</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main-card h-screen snap-start">
+          <h2 class="font-serif text-6xl">Works</h2>
+          <div class="tabbed">
+            <ul class="sub-nav flex">
+              <li class="sub-items py-5 px-10 ">TSMM</li>
+              <li class="sub-items py-5 px-10 bg-blue-light rounded-t-lg">Psychedelia Britannia</li>
+              <li class="sub-items py-5 px-10">Off Street Tacos</li>
+            </ul>
+            <div class="case-study flex bg-blue-light p-10 rounded-xl">
+              <div class="study-content">
+                <h3 class="study-title">Psychedelia Britannia</h3>
+                <p class="study-sub-title"><b>Project:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Dolores cupiditate, quo ab eius modi enim voluptatum aliquid nesciunt cum inventore illum, perferendis
+                  sequi animi similique?</p>
+                <p class="study-sub-title"><b>Project:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Dolores cupiditate, quo ab eius modi enim voluptatum aliquid nesciunt cum inventore illum, perferendis
+                  sequi animi similique?</p>
+                <p class="study-sub-title"><b>Project:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Dolores cupiditate, quo ab eius modi enim voluptatum aliquid nesciunt cum inventore illum, perferendis
+                  sequi animi similique?</p>
+                <p class="study-sub-title"><b>Project:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Dolores cupiditate, quo ab eius modi enim voluptatum aliquid nesciunt cum inventore illum, perferendis
+                  sequi animi similique?</p>
+                <p class="study-sub-title"><b>Project:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Dolores cupiditate, quo ab eius modi enim voluptatum aliquid nesciunt cum inventore illum, perferendis
+                  sequi animi similique?</p>
+              </div>
+              <div class="study-cta">
+                <img src="https://placeimg.com/640/640/tech" alt="Placeholder image">
+                <div class="study-btns">
+                  <button>Repo</button>
+                  <button>Site</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main-card h-screen snap-start">
+          <h2 class="font-serif text-6xl">Works</h2>
+          <div class="tabbed">
+            <ul class="sub-nav flex">
+              <li class="sub-items py-5 px-10">TSMM</li>
+              <li class="sub-items py-5 px-10">Psychedelia Britannia</li>
+              <li class="sub-items py-5 px-10 bg-blue-light rounded-t-lg">Off Street Tacos</li>
+            </ul>
+            <div class="case-study flex bg-blue-light p-10 rounded-xl">
+              <div class="study-content">
+                <h3 class="study-title">Off Street Tacos</h3>
+                <p class="study-sub-title"><b>Project:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Dolores cupiditate, quo ab eius modi enim voluptatum aliquid nesciunt cum inventore illum, perferendis
+                  sequi animi similique?</p>
+                <p class="study-sub-title"><b>Project:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Dolores cupiditate, quo ab eius modi enim voluptatum aliquid nesciunt cum inventore illum, perferendis
+                  sequi animi similique?</p>
+                <p class="study-sub-title"><b>Project:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Dolores cupiditate, quo ab eius modi enim voluptatum aliquid nesciunt cum inventore illum, perferendis
+                  sequi animi similique?</p>
+                <p class="study-sub-title"><b>Project:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Dolores cupiditate, quo ab eius modi enim voluptatum aliquid nesciunt cum inventore illum, perferendis
+                  sequi animi similique?</p>
+                <p class="study-sub-title"><b>Project:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Dolores cupiditate, quo ab eius modi enim voluptatum aliquid nesciunt cum inventore illum, perferendis
+                  sequi animi similique?</p>
+              </div>
+              <div class="study-cta">
+                <img src="https://placeimg.com/640/640/tech" alt="Placeholder image">
+                <div class="study-btns">
+                  <button>Repo</button>
+                  <button>Site</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Projects section -->
+        <section id="projects" class="main-card h-screen overflow-auto snap-start">
+          <h2 class="card-title font-serif text-6xl">Projects</h2>
+          <div class="grid project-grid grid-cols-3 auto-rows-auto gap-6">
+            <div class="project-grid-items bg-blue-light w-56 aspect-square p-8">
+              <h3>Project 1</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, culpa.</p>
+            </div>
+            <div class="project-grid-items bg-blue-light w-56 aspect-square p-8">
+              <h3>Project 2</h3>
+              <p>Voluptas facilis ab soluta itaque. Laudantium provident beatae totam et.</p>
+            </div>
+            <div class="project-grid-items bg-blue-light w-56 aspect-square p-8">
+              <h3>Project 3</h3>
+              <p>Quam culpa rem vel dolorum a at assumenda beatae molestias!</p>
+            </div>
+            <div class="project-grid-items bg-blue-light w-56 aspect-square p-8">
+              <h3>Project 4</h3>
+              <p>Asperiores quia quaerat ipsa repudiandae optio est, impedit dolor excepturi!</p>
+            </div>
+            <div class="project-grid-items bg-blue-light w-56 aspect-square p-8">
+              <h3>Project 5</h3>
+              <p>Amet quidem, quod veritatis in facere voluptates ut maxime ullam.</p>
+            </div>
+            <div class="project-grid-items bg-blue-light w-56 aspect-square p-8">
+              <h3>Project 6</h3>
+              <p>Error nihil autem dolorum! Aliquid modi dignissimos alias aut tempora!</p>
+            </div>
+            <div class="project-grid-items bg-blue-light w-56 aspect-square p-8">
+              <h3>Project 7</h3>
+              <p>Dolore, perspiciatis alias eligendi nostrum porro quasi itaque expedita corporis?</p>
+            </div>
+            <div class="project-grid-items bg-blue-light w-56 aspect-square p-8">
+              <h3>Project 8</h3>
+              <p>Sit ducimus autem deserunt. Corporis necessitatibus officia facilis dolorum aliquam!</p>
+            </div>
+            <div class="project-grid-items bg-blue-light w-56 aspect-square p-8">
+              <h3>Project 9</h3>
+              <p>Accusamus, fugit beatae facilis quo voluptates accusantium magnam et itaque.</p>
+            </div>
+          </div>
+        </section>
+        <!-- Contact Form Section -->
+        <section class="main-card h-screen snap-start">
+          <h2 class="font-serif text-6xl">Get in touch</h2>
+          <form action="index.html">
+            <fieldset>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name">
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email">
+              <label for="message">Message:</label>
+              <textarea name="message" id="message" cols="30"
+                rows="10">How can I help make your dreams a reality?</textarea>
+            </fieldset>
+          </form>
+        </section>
+      </div>
+      <!-- Second decorative corner -->
+      <small class="copyright self-end">&copy;2023 A.Garner Designs</small>
+    </main>
+  </div>
 </body>
 
 </html>
