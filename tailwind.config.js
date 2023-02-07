@@ -6,8 +6,14 @@ module.exports = {
     colors: {
       'white': '#E6F4F7',
       'black': '#17151A',
-      'orange': '#EBA730',
-      'teal': '#33BA9D',
+      'orange': {
+        DEFAULT: '#EBA730',
+        light: '#F2C77D',
+      },
+      'teal': {
+        DEFAULT: '#33BA9D',
+        light: '#7FDCC8',
+      },
       'blue': {
         light: '#647A82',
         DEFAULT: '#073642',

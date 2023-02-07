@@ -14,6 +14,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
+  <script src="https://kit.fontawesome.com/e9d6257168.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -31,7 +32,8 @@
         <li class="nav-list-item"><a href="#contact" class="nav-list-link">Contact</a></li>
         <li class="nav-list-item"><a href="#resume" class="nav-list-link">Resume</a></li>
       </ul>
-      <a href="http://www.github.com/atgarner23" class="nav-social">Github</a>
+      <a href="http://www.github.com/atgarner23" class="nav-social" target="_blank"><i
+          class="fa-brands fa-github"></i></a>
     </nav>
     <main class="main-body p-10 flex flex-col justify-between mx-auto max-w-5xl">
       <!-- need to figure out he decorative corners -->
@@ -40,7 +42,7 @@
       </p>
 
       <!-- gsap scroll trigger -->
-      <div class="scroll-box overflow-auto snap-y snap-mandatory">
+      <div class="scroll-box overflow-auto snap-mandatory snap-y">
         <!--this starts the actual scrollable box-->
         <section id="about" class="main-card flex justify-around items-center gap-6 h-screen snap-start">
           <div class="flex flex-col gap-8">
@@ -62,7 +64,7 @@
           <img src="./assets/img/headshot_cropped.png" alt="Portrait of Andy Garner" class="w-96 h-96 block">
         </section>
         <section id="works" class="main-card h-screen snap-start">
-          <h2 class="font-serif text-6xl">Works</h2>
+          <h2 class="font-serif text-6xl p-3">Works</h2>
           <div class="tabbed">
             <ul class="sub-nav flex">
               <li class="sub-items py-5 px-10 bg-blue-light rounded-t-lg">TSMM</li>
@@ -71,35 +73,46 @@
             </ul>
             <div class="case-study flex bg-blue-light p-10 rounded-xl rounded-tl-none">
               <div class="study-content">
-                <h3 class="study-title">The Sober Military Movement</h3>
-                <p class="study-sub-title"><b>Project:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Dolores cupiditate, quo ab eius modi enim voluptatum aliquid nesciunt cum inventore illum, perferendis
-                  sequi animi similique?</p>
-                <p class="study-sub-title"><b>Project:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Dolores cupiditate, quo ab eius modi enim voluptatum aliquid nesciunt cum inventore illum, perferendis
-                  sequi animi similique?</p>
-                <p class="study-sub-title"><b>Project:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Dolores cupiditate, quo ab eius modi enim voluptatum aliquid nesciunt cum inventore illum, perferendis
-                  sequi animi similique?</p>
-                <p class="study-sub-title"><b>Project:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Dolores cupiditate, quo ab eius modi enim voluptatum aliquid nesciunt cum inventore illum, perferendis
-                  sequi animi similique?</p>
-                <p class="study-sub-title"><b>Project:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Dolores cupiditate, quo ab eius modi enim voluptatum aliquid nesciunt cum inventore illum, perferendis
-                  sequi animi similique?</p>
+                <h3 class="study-title text-2xl font-bold pb-6">The Sober Military Movement</h3>
+                <p class="study-sub-title pb-3 leading-relaxed"><b>Project:</b> This project&apos;s main objective was
+                  to
+                  create a
+                  bespoke
+                  theme design that not only met the client&apos;s expectations but also seamlessly integrated with the
+                  WordPress ecosystem. This theme needed to be easily transferable and customizable using the WordPress
+                  admin panel.</p>
+                <p class="study-sub-title pb-3 leading-relaxed"><b>Challenges:</b> Learning to code within the WordPress
+                  ecosystem.
+                  Creating
+                  custom plugins to accomplish specific tasks. Utilizing the Theme Check to make sure my theme was up to
+                  current standards</p>
+                <p class="study-sub-title pb-3 leading-relaxed"><b>Successes:</b> Able to create a WordPress theme that
+                  is
+                  reusable by
+                  multiple clients with minimal changes aside from styling. Also able to create custom plug ins and
+                  incorporate existing plugins to enhance the user experience. Including Advanced Custom Fields,
+                  WooCommerce, and bbPress.</p>
+                <p class="study-sub-title pb-3 leading-relaxed"><b>Tech Stack:</b> HTML, CSS, Sass, PHP, MySQL, Figma,
+                  WordPress,
+                  bbPress,
+                  Advanced Custom Fields</p>
               </div>
-              <div class="study-cta">
+              <div class="study-cta h-full">
                 <img src="https://placeimg.com/640/640/tech" alt="Placeholder image">
-                <div class="study-btns">
-                  <button>Repo</button>
-                  <button>Site</button>
+                <div class="study-btns m-3 flex gap-2">
+                  <a href="https://www.github.com/atgarner23" target="_blank"
+                    class="px-4 py-2 rounded text-xl bg-orange hover:bg-orange-light text-black"><i
+                      class="fa-brands fa-github"></i>Repo</a>
+                  <a href="http://www.agarnerdesigns.com/tsmm" target="_blank"
+                    class="px-4 py-2 rounded text-xl bg-teal hover:bg-teal-light text-black block"><i
+                      class="fa-regular fa-globe"></i>Site</a>
                 </div>
               </div>
             </div>
           </div>
         </section>
         <section class="main-card h-screen snap-start">
-          <h2 class="font-serif text-6xl">Works</h2>
+          <h2 class="font-serif text-6xl p-3">Works</h2>
           <div class="tabbed">
             <ul class="sub-nav flex">
               <li class="sub-items py-5 px-10 ">TSMM</li>
@@ -108,35 +121,40 @@
             </ul>
             <div class="case-study flex bg-blue-light p-10 rounded-xl">
               <div class="study-content">
-                <h3 class="study-title">Psychedelia Britannia</h3>
-                <p class="study-sub-title"><b>Project:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Dolores cupiditate, quo ab eius modi enim voluptatum aliquid nesciunt cum inventore illum, perferendis
-                  sequi animi similique?</p>
-                <p class="study-sub-title"><b>Project:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Dolores cupiditate, quo ab eius modi enim voluptatum aliquid nesciunt cum inventore illum, perferendis
-                  sequi animi similique?</p>
-                <p class="study-sub-title"><b>Project:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Dolores cupiditate, quo ab eius modi enim voluptatum aliquid nesciunt cum inventore illum, perferendis
-                  sequi animi similique?</p>
-                <p class="study-sub-title"><b>Project:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Dolores cupiditate, quo ab eius modi enim voluptatum aliquid nesciunt cum inventore illum, perferendis
-                  sequi animi similique?</p>
-                <p class="study-sub-title"><b>Project:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Dolores cupiditate, quo ab eius modi enim voluptatum aliquid nesciunt cum inventore illum, perferendis
-                  sequi animi similique?</p>
+                <h3 class="study-title text-2xl font-bold pb-6">Psychedelia Britannia</h3>
+                <p class="study-sub-title pb-3 leading-relaxed"><b>Project:</b> In this project, I was challenged to
+                  create a social media
+                  style web application, architect a database to incorporate users and their posts, and build with
+                  scalability in mind. I chose to create and brand a web journal application centering around the
+                  psychedelic community. The main goal was to create a way for users to create both public and private
+                  posts to help grow a community focused on helping each other.</p>
+                <p class="study-sub-title pb-3 leading-relaxed"><b>Challenges:</b> architecting, building, and
+                  maintaining a database. Making
+                  sure user accounts and information are secure. Adequately pulling the proper information for each
+                  post.</p>
+                <p class="study-sub-title pb-3 leading-relaxed"><b>Successes:</b> Was able to create a database-driven
+                  web app that
+                  incorporates multiple users, database architecture that is built for growth, and focused on user
+                  privacy.</p>
+                <p class="study-sub-title pb-3 leading-relaxed"><b>Tech Stack:</b> HTML, CSS, Sass, PHP, MySQL,
+                  JavaScript, Figma</p>
               </div>
-              <div class="study-cta">
+              <div class="study-cta h-full">
                 <img src="https://placeimg.com/640/640/tech" alt="Placeholder image">
-                <div class="study-btns">
-                  <button>Repo</button>
-                  <button>Site</button>
+                <div class="study-btns m-3 flex gap-2">
+                  <a href="https://www.github.com/atgarner23" target="_blank"
+                    class="px-4 py-2 rounded text-xl bg-orange hover:bg-orange-light text-black"><i
+                      class="fa-brands fa-github"></i>Repo</a>
+                  <a href="http://www.agarnerdesigns.com/tsmm" target="_blank"
+                    class="px-4 py-2 rounded text-xl bg-teal hover:bg-teal-light text-black block"><i
+                      class="fa-regular fa-globe"></i>Site</a>
                 </div>
               </div>
             </div>
           </div>
         </section>
         <section class="main-card h-screen snap-start">
-          <h2 class="font-serif text-6xl">Works</h2>
+          <h2 class="font-serif text-6xl p-3">Works</h2>
           <div class="tabbed">
             <ul class="sub-nav flex">
               <li class="sub-items py-5 px-10">TSMM</li>
@@ -145,28 +163,33 @@
             </ul>
             <div class="case-study flex bg-blue-light p-10 rounded-xl">
               <div class="study-content">
-                <h3 class="study-title">Off Street Tacos</h3>
-                <p class="study-sub-title"><b>Project:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Dolores cupiditate, quo ab eius modi enim voluptatum aliquid nesciunt cum inventore illum, perferendis
-                  sequi animi similique?</p>
-                <p class="study-sub-title"><b>Project:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Dolores cupiditate, quo ab eius modi enim voluptatum aliquid nesciunt cum inventore illum, perferendis
-                  sequi animi similique?</p>
-                <p class="study-sub-title"><b>Project:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Dolores cupiditate, quo ab eius modi enim voluptatum aliquid nesciunt cum inventore illum, perferendis
-                  sequi animi similique?</p>
-                <p class="study-sub-title"><b>Project:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Dolores cupiditate, quo ab eius modi enim voluptatum aliquid nesciunt cum inventore illum, perferendis
-                  sequi animi similique?</p>
-                <p class="study-sub-title"><b>Project:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Dolores cupiditate, quo ab eius modi enim voluptatum aliquid nesciunt cum inventore illum, perferendis
-                  sequi animi similique?</p>
+                <h3 class="study-title text-2xl font-bold pb-6">Off Street Tacos</h3>
+                <p class="study-sub-title pb-3 leading-relaxed"><b>Project:</b> I was tasked with creating a complete
+                  brand identity and web
+                  campaign for a fictitious client in an assigned industry. After being assigned to the automotive
+                  industry, I decided to create a brand that centered around the off-roading community specifically
+                  catering to Toyota Tacomas. To create a successful brand and campaign, I utilized not only customer
+                  personas but also a persona for the client. I decided to create a woman owned business whose goal was
+                  to bring diversity and inclusion into what is largely seen as a male hobby.</p>
+                <p class="study-sub-title pb-3 leading-relaxed"><b>Challenges:</b> Static HTML. Quick turn around.
+                  Complete brand identity.
+                  Market research</p>
+                <p class="study-sub-title pb-3 leading-relaxed"><b>Successes:</b> Created a fully integrated branded
+                  website. Utilized the
+                  creation of a client avatar as well as a customer avatar to better get a hand on how to tackle the
+                  project brief</p>
+                <p class="study-sub-title pb-3 leading-relaxed"><b>Tech Stack:</b> HTML, CSS, JavaScript, MailChimp,
+                  Photoshop</p>
               </div>
-              <div class="study-cta">
+              <div class="study-cta h-full">
                 <img src="https://placeimg.com/640/640/tech" alt="Placeholder image">
-                <div class="study-btns">
-                  <button>Repo</button>
-                  <button>Site</button>
+                <div class="study-btns m-3 flex gap-2">
+                  <a href="https://www.github.com/atgarner23" target="_blank"
+                    class="px-4 py-2 rounded text-xl bg-orange hover:bg-orange-light text-black"><i
+                      class="fa-brands fa-github"></i>Repo</a>
+                  <a href="http://www.agarnerdesigns.com/tsmm" target="_blank"
+                    class="px-4 py-2 rounded text-xl bg-teal hover:bg-teal-light text-black block"><i
+                      class="fa-regular fa-globe"></i>Site</a>
                 </div>
               </div>
             </div>
@@ -174,7 +197,7 @@
         </section>
         <!-- Projects section -->
         <section id="projects" class="main-card h-screen overflow-auto snap-start">
-          <h2 class="card-title font-serif text-6xl">Projects</h2>
+          <h2 class="card-title font-serif text-6xl p-3">Projects</h2>
           <div class="grid project-grid grid-cols-3 auto-rows-auto gap-6">
             <div class="project-grid-items bg-blue-light w-56 aspect-square p-8">
               <h3>Project 1</h3>
@@ -200,23 +223,11 @@
               <h3>Project 6</h3>
               <p>Error nihil autem dolorum! Aliquid modi dignissimos alias aut tempora!</p>
             </div>
-            <div class="project-grid-items bg-blue-light w-56 aspect-square p-8">
-              <h3>Project 7</h3>
-              <p>Dolore, perspiciatis alias eligendi nostrum porro quasi itaque expedita corporis?</p>
-            </div>
-            <div class="project-grid-items bg-blue-light w-56 aspect-square p-8">
-              <h3>Project 8</h3>
-              <p>Sit ducimus autem deserunt. Corporis necessitatibus officia facilis dolorum aliquam!</p>
-            </div>
-            <div class="project-grid-items bg-blue-light w-56 aspect-square p-8">
-              <h3>Project 9</h3>
-              <p>Accusamus, fugit beatae facilis quo voluptates accusantium magnam et itaque.</p>
-            </div>
           </div>
         </section>
         <!-- Contact Form Section -->
-        <section class="main-card h-screen snap-start">
-          <h2 class="font-serif text-6xl">Get in touch</h2>
+        <section id="contact" class="main-card h-screen snap-start">
+          <h2 class="font-serif text-6xl p-3">Get in touch</h2>
           <form action="index.html">
             <fieldset>
               <label for="name">Name:</label>
