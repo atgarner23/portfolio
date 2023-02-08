@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/atgarner23/portfolio#readme",
   "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
     "tailwindcss": "^3.2.4"
   }
 }
