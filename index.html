@@ -32,8 +32,10 @@
         <li class="nav-list-item"><a href="#contact" class="nav-list-link">Contact</a></li>
         <li class="nav-list-item"><a href="#resume" class="nav-list-link">Resume</a></li>
       </ul>
-      <a href="http://www.github.com/atgarner23" class="nav-social" target="_blank"><i
+      <a href="http://www.github.com/atgarner23" class="nav-social text-4xl" target="_blank"><i
           class="fa-brands fa-github"></i></a>
+      <a href="http://www.linkedin.com/in/atgarner23" class="nav-social text-4xl" target="_blank"><i
+          class="fa-brands fa-linkedin"></i></a>
     </nav>
     <main class="main-body p-10 flex flex-col justify-between mx-auto max-w-5xl">
       <!-- need to figure out he decorative corners -->
@@ -188,7 +190,7 @@
                     class="px-4 py-2 block rounded text-xl bg-orange hover:bg-orange-light text-black"><i
                       class="fa-brands fa-github"></i>Repo</a>
                   <a href="http://www.agarnerdesigns.com/tsmm" target="_blank"
-                    class="px-4 py-2 block rounded text-xl bg-teal hover:bg-teal-light text-black block"><i
+                    class="px-4 py-2 block rounded text-xl bg-teal hover:bg-teal-light text-black"><i
                       class="fa-regular fa-globe"></i>Site</a>
                 </div>
               </div>
@@ -231,13 +233,55 @@
           <form action="index.html">
             <fieldset>
               <label for="name">Name:</label>
-              <input type="text" id="name" name="name">
+              <input type="text" id="name" name="name" class="block
+              w-full
+              px-3
+              py-1.5
+              text-base
+              font-normal
+              text-black
+              bg-white bg-clip-padding
+              border-2 border-solid border-gray-300
+              rounded
+              transition
+              ease-in-out
+              m-0
+              focus:text-black focus:bg-white focus:border-teal focus:outline-none">
               <label for="email">Email:</label>
-              <input type="email" name="email" id="email">
+              <input type="email" name="email" id="email" class="block
+              w-full
+              px-3
+              py-1.5
+              text-base
+              font-normal
+              text-black
+              bg-white bg-clip-padding
+              border-2 border-solid border-gray-300
+              rounded
+              transition
+              ease-in-out
+              m-0
+              focus:text-black focus:bg-white focus:border-teal focus:outline-none">
               <label for="message">Message:</label>
-              <textarea name="message" id="message" cols="30"
+              <textarea name="message" id="message" class="
+              block
+              w-full
+              px-3
+              py-1.5
+              text-base
+              font-normal
+              text-black
+              bg-white bg-clip-padding
+              border-2 border-solid border-gray-300
+              rounded
+              transition
+              ease-in-out
+              m-0
+              focus:text-black focus:bg-white focus:border-teal focus:outline-none" cols="30"
                 rows="10">How can I help make your dreams a reality?</textarea>
             </fieldset>
+            <button type="submit"
+              class="px-4 py-2 mt-2 block rounded text-xl bg-teal hover:bg-teal-light text-black">Submit</button>
           </form>
         </section>
       </div>
