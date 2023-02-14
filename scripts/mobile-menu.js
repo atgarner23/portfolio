@@ -1,0 +1,1 @@
+const mobileBtn = document.querySelector('#mobileToggle');
