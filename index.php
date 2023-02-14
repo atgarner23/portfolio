@@ -1,0 +1,393 @@
+<?php 
+//includes
+require('includes/CONFIG.php');
+require_once('includes/functions.php');
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andy Garner Web Portfolio</title>
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/e9d6257168.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="bg-blue text-white font-sans">
+  <div class="sm:flex sm:h-screen">
+
+    <!-- Mobile Menu -->
+    <button id="mobileOpen"
+      class="sm:hidden text-3xl text-teal focus:text-teal-light active:text-teal-light fixed top-3.5 left-3.5"><i
+        class="fa-solid fa-bars"></i></button>
+    <div id="overlay" class="fixed inset-0 bg-blue-light/75 hidden">
+      <button id="mobileClose"
+        class="text-4xl text-teal focus:text-teal-light active:text-teal-light fixed top-3.5 right-3.5"><i
+          class="fa-solid fa-rectangle-xmark"></i></button>
+      <nav id="mobileNav"
+        class="mobile-nav bg-blue-dark fixed top-0 left-0 bottom-0 w-1/2 font-serif flex flex-col justify-around items-center">
+
+
+        <a href="index.php" class="block w-12 h-12">
+          <img src="./assets/img/Asset 1.svg" alt="A. Garner Designs">
+        </a>
+
+        <ul class="nav-list flex flex-col justify-around h-1/2">
+          <li class="nav-list-item sm:text-xs"><a href="#works" class="nav-list-link">Works</a></li>
+          <li class="nav-list-item sm:text-xs"><a href="#projects" class="nav-list-link">Projects</a></li>
+          <li class="nav-list-item sm:text-xs"><a href="#contact" class="nav-list-link">Contact</a></li>
+          <li class="nav-list-item sm:text-xs"><a href="#resume" class="nav-list-link">Resume</a></li>
+        </ul>
+        <div class="socials flex flex-col lg:flex-row gap-2 p-4">
+          <a href="http://www.github.com/atgarner23" class="nav-social text-4xl shrink" target="_blank"><i
+              class="fa-brands fa-github"></i></a>
+          <a href="http://www.linkedin.com/in/atgarner23" class="nav-social text-4xl shrink" target="_blank"><i
+              class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Normal Menu -->
+    <nav class="main-nav bg-blue-dark  w-[10%] flex-col justify-around font-serif items-center hidden sm:flex">
+
+
+      <a href="index.php" class="block w-12 h-12">
+        <img src="./assets/img/Asset 1.svg" alt="A. Garner Designs">
+      </a>
+
+      <ul class="nav-list flex flex-col justify-around h-1/2">
+        <li class="nav-list-item sm:text-xs md:text-xl"><a href="#works" class="nav-list-link">Works</a></li>
+        <li class="nav-list-item sm:text-xs md:text-xl"><a href="#projects" class="nav-list-link">Projects</a></li>
+        <li class="nav-list-item sm:text-xs md:text-xl"><a href="#contact" class="nav-list-link">Contact</a></li>
+        <li class="nav-list-item sm:text-xs md:text-xl"><a href="./assets/Andrew_Garner_Resume.pdf" target="_blank"
+            class="nav-list-link">Resume</a></li>
+      </ul>
+      <div class="socials flex flex-col lg:flex-row gap-2 p-4">
+        <a href="http://www.github.com/atgarner23" class="nav-social text-4xl shrink" target="_blank"><i
+            class="fa-brands fa-github"></i></a>
+        <a href="http://www.linkedin.com/in/atgarner23" class="nav-social text-4xl shrink" target="_blank"><i
+            class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </nav>
+
+    <main class="main-body p-10 flex flex-col justify-between mx-auto max-w-5xl">
+      <!-- need to figure out he decorative corners -->
+      <p class="email text-orange self-end"><a href="mailto:atgarner23@gmail.com"
+          class="email-link">atgarner23@gmail.com</a>
+      </p>
+
+      <!-- gsap scroll trigger -->
+      <div class="scroll-box overflow-visible sm:overflow-auto snap-none sm:snap-mandatory sm:snap-y">
+        <!--this starts the actual scrollable box-->
+        <section id="about"
+          class="main-card flex flex-col md:flex-row md:justify-around items-center gap-6 sm:h-screen snap-start">
+          <div class="flex flex-col md:gap-8">
+            <div>
+              <h2 class="card-title font-serif text-5xl lg:text-6xl tracking-wider my-3">Andy Garner</h2>
+              <h3 class="card-sub-title font-sans font-semibold text-2xl lg:text-3xl text-teal my-1.5">Junior Web
+                Developer
+              </h3>
+            </div>
+            <p class="about-me">Recent college graduate and Navy veteran seeking a role as a Junior
+              Web
+              Developer to showcase my skills and learn leading industry practices while growing my
+              knowledge
+              and skillset. I am proficient in HTML, CSS, JavaScript, and PHP and familiar with WordPress.
+              I
+              am dedicated to learning and actively strive to be on the cutting edge of the industry best
+              practices to help bring a semantic, accessible, and fast experience to the end user. I enjoy
+              troubleshooting code to find creative fixes and work around to put forth the most optimized
+              product that I can.</p>
+          </div>
+          <img src="./assets/img/headshot_cropped.png" alt="Portrait of Andy Garner"
+            class="w-3/4 md:w-1/3 lg:w-96 lg:h-96 block">
+        </section>
+
+
+        <!-- Works Section -->
+        <section id="works" class="main-card sm:h-screen snap-start">
+          <h2 class="font-serif text-4xl lg:text-6xl p-3 tracking-wider">Works</h2>
+          <div class="tabbed">
+            <ul class="sub-nav flex">
+              <li
+                class="sub-items py-1.5 px-3 sm:py-3.5 sm:px-9 bg-blue-light rounded-t-lg text-center hover:text-black">
+                <a href="#works">TSMM</a>
+              </li>
+              <li
+                class="sub-items py-1.5 px-3 sm:py-3.5 sm:px-9 text-center bg-blue-dark hover:bg-teal hover:text-black rounded-t-lg border-t border-r border-teal">
+                <a href="#pb">Psychedelia Britannia</a>
+              </li>
+              <li
+                class="sub-items py-1.5 px-3 sm:py-3.5 sm:px-9 text-center bg-blue-dark  hover:bg-teal hover:text-black rounded-t-lg border-t border-r border-teal">
+                <a href="#ost">Off
+                  Street Tacos</a>
+              </li>
+            </ul>
+
+            <div class="case-study lg:flex bg-blue-light p-5 lg:p-7 rounded-xl rounded-tl-none items-center">
+              <div class="study-content lg:mr-4 max-w-prose">
+                <h3 class="study-title text-2xl lg:text-4xl font-bold pb-4">The Sober Military Movement</h3>
+                <p class="study-sub-title pb-2.5 md:pb-1.5 lg:pb-3 leading-relaxed"><b>Project:</b> This project&apos;s
+                  main
+                  objective was
+                  to
+                  create a
+                  bespoke
+                  theme design that not only met the client&apos;s expectations but also seamlessly integrated with the
+                  WordPress ecosystem. This theme needed to be easily transferable and customizable using the WordPress
+                  admin panel.</p>
+                <p class="study-sub-title pb-2.5 md:pb-1.5 lg:pb-3 leading-relaxed"><b>Challenges:</b> Learning to code
+                  within
+                  the WordPress
+                  ecosystem.
+                  Creating
+                  custom plugins to accomplish specific tasks. Utilizing the Theme Check to make sure my theme was up to
+                  current standards</p>
+                <p class="study-sub-title pb-2.5 md:pb-1.5 lg:pb-3 leading-relaxed"><b>Successes:</b> Able to create a
+                  WordPress theme that
+                  is
+                  reusable by
+                  multiple clients with minimal changes aside from styling. Also able to create custom plug ins and
+                  incorporate existing plugins to enhance the user experience. Including Advanced Custom Fields,
+                  WooCommerce, and bbPress.</p>
+                <p class="study-sub-title leading-relaxed"><b>Tech Stack:</b> HTML, CSS, Sass, PHP, MySQL, Figma,
+                  WordPress,
+                  bbPress,
+                  Advanced Custom Fields</p>
+              </div>
+              <div class="study-cta lg:h-full">
+                <img src="./assets/img/tsmm-screen.jpg" alt="Screenshot of TSMM site" class="hidden lg:block">
+                <div class="study-btns lg:mt-4 flex flex-row lg:flex-col xl:flex-row gap-4 justify-center">
+                  <a href="https://github.com/atgarner23/TSMM.git" target="_blank"
+                    class="px-4 py-2 rounded text-xl bg-orange hover:bg-orange-light text-black block m-2 text-center"><i
+                      class="fa-brands fa-github"></i> Repo</a>
+                  <a href="http://www.agarnerdesigns.com/tsmm" target="_blank"
+                    class="px-4 py-2 rounded text-xl bg-teal hover:bg-teal-light text-black block m-2 text-center"><i
+                      class="fa-regular fa-globe"></i> Site</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="pb" class="main-card sm:h-screen snap-start">
+          <h2 class="font-serif text-4xl lg:text-6xl p-3 tracking-wider">Works</h2>
+          <div class="tabbed">
+            <ul class="sub-nav flex">
+              <li
+                class="sub-items py-1.5 px-3 sm:py-3.5 sm:px-9 text-center bg-blue-dark hover:bg-teal hover:text-black rounded-t-lg border-t border-l border-teal">
+                <a href="#works">TSMM</a>
+              </li>
+              <li
+                class="sub-items py-1.5 px-3 sm:py-3.5 sm:px-9 bg-blue-light rounded-t-lg text-center hover:text-black">
+                <a href="#pb">Psychedelia Britannia</a>
+              </li>
+              <li
+                class="sub-items py-1.5 px-3 sm:py-3.5 sm:px-9 text-center bg-blue-dark  hover:bg-teal hover:text-black rounded-t-lg border-t border-r border-teal">
+                <a href="#ost">Off
+                  Street Tacos</a>
+              </li>
+            </ul>
+
+            <div class="case-study lg:flex bg-blue-light p-5 lg:p-7 rounded-xl rounded-tl-none items-center">
+              <div class="study-content lg:mr-4 max-w-prose">
+                <h3 class="study-title text-2xl lg:text-4xl font-bold pb-4">Psychedelia Britannia</h3>
+                <p class="study-sub-title pb-2.5 md:pb-1.5 lg:pb-3 leading-relaxed"><b>Project:</b> In this project, I
+                  was challenged to create a social media style web application, architect a database to incorporate
+                  users and their posts, and build with scalability in mind. I chose to create and brand a web journal
+                  application centering around the psychedelic community. The main goal was to create a way for users to
+                  create both public and private posts to help grow a community focused on helping each other.</p>
+                <p class="study-sub-title pb-2.5 md:pb-1.5 lg:pb-3 leading-relaxed"><b>Challenges:</b> architecting,
+                  building, and maintaining a database. Making sure user accounts and information are secure. Adequately
+                  pulling the proper information for each post.</p>
+                <p class="study-sub-title pb-2.5 md:pb-1.5 lg:pb-3 leading-relaxed"><b>Successes:</b> Was able to create
+                  a database-driven web app that incorporates multiple users, database architecture that is built for
+                  growth, and focused on user privacy.</p>
+                <p class="study-sub-title leading-relaxed"><b>Tech Stack:</b> HTML, CSS, Sass, PHP, MySQL, JavaScript,
+                  Figma</p>
+              </div>
+              <div class="study-cta lg:h-full">
+                <img src="./assets/img/pb-screen.jpg" alt="Screenshot of Psychedelia Britannia site"
+                  class="hidden lg:block">
+                <div class="study-btns lg:mt-4 flex flex-row lg:flex-col xl:flex-row gap-4 justify-center">
+                  <a href="https://github.com/atgarner23/Psychedelia-Britannia.git" target="_blank"
+                    class="px-4 py-2 rounded text-xl bg-orange hover:bg-orange-light text-black block m-2 text-center"><i
+                      class="fa-brands fa-github"></i> Repo</a>
+                  <a href="https://agarnerdesigns.com/pb/" target="_blank"
+                    class="px-4 py-2 rounded text-xl bg-teal hover:bg-teal-light text-black block m-2 text-center"><i
+                      class="fa-regular fa-globe"></i> Site</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="ost" class="main-card sm:h-screen snap-start">
+          <h2 class="font-serif text-4xl lg:text-6xl p-3 tracking-wider">Works</h2>
+          <div class="tabbed">
+            <ul class="sub-nav flex">
+              <li
+                class="sub-items py-1.5 px-3 sm:py-3.5 sm:px-9 text-center bg-blue-dark  hover:bg-teal hover:text-black rounded-t-lg border-t border-l border-teal">
+                <a href="#works">TSMM</a>
+              </li>
+              <li
+                class="sub-items py-1.5 px-3 sm:py-3.5 sm:px-9 text-center bg-blue-dark hover:bg-teal hover:text-black rounded-t-lg border-t border-l border-teal">
+                <a href="#pb">Psychedelia Britannia</a>
+              </li>
+              <li
+                class="sub-items py-1.5 px-3 sm:py-3.5 sm:px-9 bg-blue-light rounded-t-lg text-center hover:text-black">
+                <a href="#ost">Off
+                  Street Tacos</a>
+              </li>
+            </ul>
+
+            <div class="case-study lg:flex bg-blue-light p-5 lg:p-7 rounded-xl rounded-tl-none items-center">
+              <div class="study-content lg:mr-4 max-w-prose">
+                <h3 class="study-title text-2xl lg:text-4xl font-bold pb-4">Off Street Tacos</h3>
+                <p class="study-sub-title pb-2.5 md:pb-1.5 lg:pb-3 leading-relaxed"><b>Project:</b> I was tasked with
+                  creating a complete brand identity and web campaign for a fictitious client in an assigned industry.
+                  After being assigned to the automotive industry, I decided to create a brand that centered around the
+                  off-roading community specifically catering to Toyota Tacomas. To create a successful brand and
+                  campaign, I utilized not only customer personas but also a persona for the client. I decided to create
+                  a woman owned business whose goal was to bring diversity and inclusion into what is largely seen as a
+                  male hobby.</p>
+                <p class="study-sub-title pb-2.5 md:pb-1.5 lg:pb-3 leading-relaxed"><b>Challenges:</b> Market research.
+                  Quick turn around. Branding. Static HTML</p>
+                <p class="study-sub-title pb-2.5 md:pb-1.5 lg:pb-3 leading-relaxed"><b>Successes:</b> Created a fully
+                  integrated branded website. Utilized the creation of a client avatar as well as a customer avatar to
+                  better get a hand on how to tackle the project brief.</p>
+                <p class="study-sub-title leading-relaxed"><b>Tech Stack:</b> HTML, CSS, JavaScript, MailChimp,
+                  Photoshop</p>
+              </div>
+              <div class="study-cta lg:h-full">
+                <img src="./assets/img/ost-screen.jpg" alt="Screenshot of the Off Street Tacos site"
+                  class="hidden lg:block">
+                <div class="study-btns lg:mt-4 flex flex-row lg:flex-col xl:flex-row gap-4 justify-center">
+                  <a href="https://github.com/atgarner23/Off_Street_Tacos.git" target="_blank"
+                    class="px-4 py-2 rounded text-xl bg-orange hover:bg-orange-light text-black block m-2 text-center"><i
+                      class="fa-brands fa-github"></i> Repo</a>
+                  <a href="https://agarnerdesigns.com/ost/" target="_blank"
+                    class="px-4 py-2 rounded text-xl bg-teal hover:bg-teal-light text-black block m-2 text-center"><i
+                      class="fa-regular fa-globe"></i> Site</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Projects section -->
+        <section id="projects" class="main-card h-screen overflow-auto snap-start">
+          <h2 class="font-serif text-4xl lg:text-6xl p-3 pb-4 tracking-wider">Projects</h2>
+          <div class="grid project-grid grid-cols-2 md:grid-cols-3 grid-flow-row gap-6">
+            <a href="https://github.com/atgarner23/WS300_March2022.git" target="_blank">
+              <div class="project-grid-items bg-blue-light w-40 lg:w-56 aspect-square p-2 md:p-4 lg:p-8">
+                <h3 class="font-semibold text-2xl">Emo Nite Trivia</h3>
+                <p>A vanilla JS trivia game about Emo music</p>
+              </div>
+            </a>
+            <a href="https://github.com/atgarner23/React-Class-Oct22.git" target="_blank">
+              <div class="project-grid-items bg-blue-light w-40 lg:w-56 aspect-square p-2 md:p-4 lg:p-8">
+                <h3 class="font-semibold text-2xl">React Front To Back</h3>
+                <p>React Front To Back by Brad Traversy on Udemy</p>
+              </div>
+            </a>
+            <a href="https://github.com/atgarner23/portfolio.git" target="_blank">
+              <div class="project-grid-items bg-blue-light w-40 lg:w-56 aspect-square p-2 md:p-4 lg:p-8">
+                <h3 class="font-semibold text-2xl">This Portfolio Site</h3>
+                <p>A portfolio built utilizing static HTML, Tailwind CSS, and DaisyUI</p>
+              </div>
+            </a>
+            <a href="https://github.com/atgarner23/" target="_blank">
+              <div class="project-grid-items bg-blue-light w-40 lg:w-56 aspect-square p-2 md:p-4 lg:p-8">
+                <h3 class="font-semibold text-2xl">Coming Soon!</h3>
+                <p>Check out my other repos in the mean time</p>
+              </div>
+            </a>
+
+          </div>
+        </section>
+        <!-- Contact Form Section -->
+        <section id="contact" class="main-card sm:h-screen snap-start">
+          <h2 class="font-serif text-4xl lg:text-6xl p-3 tracking-wider">Get in touch</h2>
+          <?php require('includes/parse-contact.php'); ?>
+          <form action="index.php" method="post">
+            <!-- <div class="alert alert-error name text-white block">
+              <h5 class="text-xl font-semibold"><i class="fa-light fa-circle-exclamation"></i> You Done Fucked Up
+                A-A-Ron</h5>
+              <p>&ast; Name is too short</p>
+              <p>&ast; Email is Invalid</p>
+              <p>&ast; Message must be between 15 & 100 characters long</p>
+            </div> -->
+
+            <fieldset>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" class=" block
+              w-full
+              px-3
+              py-1.5
+              text-base
+              font-normal
+              text-black
+              bg-white bg-clip-padding
+              border-2 border-solid border-gray-300
+              rounded
+              transition
+              ease-in-out
+              m-0
+              focus:text-black focus:bg-white focus:border-teal focus:outline-none input-error">
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email" class="block
+              w-full
+              px-3
+              py-1.5
+              text-base
+              font-normal
+              text-black
+              bg-white bg-clip-padding
+              border-2 border-solid border-gray-300
+              rounded
+              transition
+              ease-in-out
+              m-0
+              focus:text-black focus:bg-white focus:border-teal focus:outline-none">
+              <label for="message">What can I do for you?</label>
+              <textarea name="message" id="message" class="
+              block
+              w-full
+              px-3
+              py-1.5
+              text-base
+              font-normal
+              text-[#374151]
+              bg-white bg-clip-padding
+              border-2 border-solid border-gray-300
+              rounded
+              transition
+              ease-in-out
+              m-0
+              focus:text-black focus:bg-white focus:border-teal focus:outline-none" cols="30"
+                rows="10"></textarea>
+            </fieldset>
+            <input type="submit" value="Submit"
+              class="px-4 py-2 mt-2 block rounded text-xl bg-teal hover:bg-teal-light text-black">Submit</input>
+              <input type="hidden" name="did_submit" value="1">
+          </form>
+        </section>
+      </div>
+      <!-- Second decorative corner -->
+      <small class="copyright self-end">&copy;2023 A.Garner Designs</small>
+    </main>
+  </div>
+
+  <script src="./scripts/mobile-menu.js"></script>
+</body>
+
+</html>
