@@ -8688,6 +8688,13 @@ html {
   left: -0.25rem;
 }
 
+.inset-0 {
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
 .top-5 {
   top: 1.25rem;
 }
@@ -8712,12 +8719,40 @@ html {
   left: 0.75rem;
 }
 
+.top-0 {
+  top: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.right-3\.5 {
+  right: 0.875rem;
+}
+
+.right-3 {
+  right: 0.75rem;
+}
+
 .isolate {
   isolation: isolate;
 }
 
 .isolation-auto {
   isolation: auto;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .float-right {
@@ -9022,6 +9057,15 @@ html {
 
 .w-3\/5 {
   width: 60%;
+}
+
+.w-1\/4 {
+  width: 25%;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .max-w-5xl {
@@ -10028,6 +10072,10 @@ html {
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-blue-light\/75 {
+  background-color: rgb(100 122 130 / 0.75);
 }
 
 .decoration-slice {

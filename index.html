@@ -20,9 +20,39 @@
 
 <body class="bg-blue text-white font-sans">
   <div class="sm:flex sm:h-screen">
-    <button id="mobileToggle"
+
+    <!-- Mobile Menu -->
+    <button id="mobileOpen"
       class="sm:hidden text-3xl text-teal focus:text-teal-light active:text-teal-light fixed top-3.5 left-3.5"><i
         class="fa-solid fa-bars"></i></button>
+    <div id="overlay" class="fixed inset-0 bg-blue-light/75 hidden">
+      <button id="mobileClose"
+        class="text-4xl text-teal focus:text-teal-light active:text-teal-light fixed top-3.5 right-3.5"><i
+          class="fa-solid fa-rectangle-xmark"></i></button>
+      <nav id="mobileNav"
+        class="mobile-nav bg-blue-dark fixed top-0 left-0 bottom-0 w-1/2 font-serif flex flex-col justify-around items-center">
+
+
+        <a href="index.html" class="block w-12 h-12">
+          <img src="./assets/img/Asset 1.svg" alt="A. Garner Designs">
+        </a>
+
+        <ul class="nav-list flex flex-col justify-around h-1/2">
+          <li class="nav-list-item sm:text-xs"><a href="#works" class="nav-list-link">Works</a></li>
+          <li class="nav-list-item sm:text-xs"><a href="#projects" class="nav-list-link">Projects</a></li>
+          <li class="nav-list-item sm:text-xs"><a href="#contact" class="nav-list-link">Contact</a></li>
+          <li class="nav-list-item sm:text-xs"><a href="#resume" class="nav-list-link">Resume</a></li>
+        </ul>
+        <div class="socials flex flex-col lg:flex-row gap-2 p-4">
+          <a href="http://www.github.com/atgarner23" class="nav-social text-4xl shrink" target="_blank"><i
+              class="fa-brands fa-github"></i></a>
+          <a href="http://www.linkedin.com/in/atgarner23" class="nav-social text-4xl shrink" target="_blank"><i
+              class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Normal Menu -->
     <nav class="main-nav bg-blue-dark  w-[10%] flex-col justify-around font-serif items-center hidden sm:flex">
 
 
@@ -43,6 +73,7 @@
             class="fa-brands fa-linkedin"></i></a>
       </div>
     </nav>
+
     <main class="main-body p-10 flex flex-col justify-between mx-auto max-w-5xl">
       <!-- need to figure out he decorative corners -->
       <p class="email text-orange self-end"><a href="mailto:atgarner23@gmail.com"
@@ -233,6 +264,8 @@
       <small class="copyright self-end">&copy;2023 A.Garner Designs</small>
     </main>
   </div>
+
+  <script src="./scripts/mobile-menu.js"></script>
 </body>
 
 </html>
