@@ -11,9 +11,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@300;400;600;700&display=swap"
     rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
   <script src="https://kit.fontawesome.com/e9d6257168.js" crossorigin="anonymous"></script>
 
 </head>
@@ -61,10 +58,11 @@
       </a>
 
       <ul class="nav-list flex flex-col justify-around h-1/2">
-        <li class="nav-list-item sm:text-xs"><a href="#works" class="nav-list-link">Works</a></li>
-        <li class="nav-list-item sm:text-xs"><a href="#projects" class="nav-list-link">Projects</a></li>
-        <li class="nav-list-item sm:text-xs"><a href="#contact" class="nav-list-link">Contact</a></li>
-        <li class="nav-list-item sm:text-xs"><a href="#resume" class="nav-list-link">Resume</a></li>
+        <li class="nav-list-item sm:text-xs md:text-xl"><a href="#works" class="nav-list-link">Works</a></li>
+        <li class="nav-list-item sm:text-xs md:text-xl"><a href="#projects" class="nav-list-link">Projects</a></li>
+        <li class="nav-list-item sm:text-xs md:text-xl"><a href="#contact" class="nav-list-link">Contact</a></li>
+        <li class="nav-list-item sm:text-xs md:text-xl"><a href="./assets/Andrew_Garner_Resume.pdf" target="_blank"
+            class="nav-list-link">Resume</a></li>
       </ul>
       <div class="socials flex flex-col lg:flex-row gap-2 p-4">
         <a href="http://www.github.com/atgarner23" class="nav-social text-4xl shrink" target="_blank"><i
@@ -113,10 +111,151 @@
           <h2 class="font-serif text-4xl lg:text-6xl p-3 tracking-wider">Works</h2>
           <div class="tabbed">
             <ul class="sub-nav flex">
-              <li class="sub-items py-1.5 px-3 sm:py-3.5 sm:px-9 bg-blue-light rounded-t-lg text-center">TSMM</li>
-              <li class="sub-items py-1.5 px-3 sm:py-3.5 sm:px-9 text-center">Psychedelia Britannia</li>
-              <li class="sub-items py-1.5 px-3 sm:py-3.5 sm:px-9 text-center">Off Street Tacos</li>
+              <li
+                class="sub-items py-1.5 px-3 sm:py-3.5 sm:px-9 bg-blue-light rounded-t-lg text-center hover:text-black">
+                <a href="#works">TSMM</a>
+              </li>
+              <li
+                class="sub-items py-1.5 px-3 sm:py-3.5 sm:px-9 text-center bg-blue-dark hover:bg-teal hover:text-black rounded-t-lg border-t border-r border-teal">
+                <a href="#pb">Psychedelia Britannia</a>
+              </li>
+              <li
+                class="sub-items py-1.5 px-3 sm:py-3.5 sm:px-9 text-center bg-blue-dark  hover:bg-teal hover:text-black rounded-t-lg border-t border-r border-teal">
+                <a href="#ost">Off
+                  Street Tacos</a>
+              </li>
             </ul>
+
+            <div class="case-study lg:flex bg-blue-light p-5 lg:p-7 rounded-xl rounded-tl-none items-center">
+              <div class="study-content lg:mr-4 max-w-prose">
+                <h3 class="study-title text-2xl lg:text-4xl font-bold pb-4">The Sober Military Movement</h3>
+                <p class="study-sub-title pb-2.5 md:pb-1.5 lg:pb-3 leading-relaxed"><b>Project:</b> This project&apos;s
+                  main
+                  objective was
+                  to
+                  create a
+                  bespoke
+                  theme design that not only met the client&apos;s expectations but also seamlessly integrated with the
+                  WordPress ecosystem. This theme needed to be easily transferable and customizable using the WordPress
+                  admin panel.</p>
+                <p class="study-sub-title pb-2.5 md:pb-1.5 lg:pb-3 leading-relaxed"><b>Challenges:</b> Learning to code
+                  within
+                  the WordPress
+                  ecosystem.
+                  Creating
+                  custom plugins to accomplish specific tasks. Utilizing the Theme Check to make sure my theme was up to
+                  current standards</p>
+                <p class="study-sub-title pb-2.5 md:pb-1.5 lg:pb-3 leading-relaxed"><b>Successes:</b> Able to create a
+                  WordPress theme that
+                  is
+                  reusable by
+                  multiple clients with minimal changes aside from styling. Also able to create custom plug ins and
+                  incorporate existing plugins to enhance the user experience. Including Advanced Custom Fields,
+                  WooCommerce, and bbPress.</p>
+                <p class="study-sub-title leading-relaxed"><b>Tech Stack:</b> HTML, CSS, Sass, PHP, MySQL, Figma,
+                  WordPress,
+                  bbPress,
+                  Advanced Custom Fields</p>
+              </div>
+              <div class="study-cta lg:h-full">
+                <img src="https://placeimg.com/640/640/tech" alt="Placeholder image" class="hidden lg:block">
+                <div class="study-btns lg:mt-4 flex flex-row lg:flex-col xl:flex-row gap-4 justify-center">
+                  <a href="https://www.github.com/atgarner23" target="_blank"
+                    class="px-4 py-2 rounded text-xl bg-orange hover:bg-orange-light text-black block m-2 text-center"><i
+                      class="fa-brands fa-github"></i> Repo</a>
+                  <a href="http://www.agarnerdesigns.com/tsmm" target="_blank"
+                    class="px-4 py-2 rounded text-xl bg-teal hover:bg-teal-light text-black block m-2 text-center"><i
+                      class="fa-regular fa-globe"></i> Site</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="pb" class="main-card sm:h-screen snap-start">
+          <h2 class="font-serif text-4xl lg:text-6xl p-3 tracking-wider">Works</h2>
+          <div class="tabbed">
+            <ul class="sub-nav flex">
+              <li
+                class="sub-items py-1.5 px-3 sm:py-3.5 sm:px-9 text-center bg-blue-dark hover:bg-teal hover:text-black rounded-t-lg border-t border-l border-teal">
+                <a href="#works">TSMM</a>
+              </li>
+              <li
+                class="sub-items py-1.5 px-3 sm:py-3.5 sm:px-9 bg-blue-light rounded-t-lg text-center hover:text-black">
+                <a href="#pb">Psychedelia Britannia</a>
+              </li>
+              <li
+                class="sub-items py-1.5 px-3 sm:py-3.5 sm:px-9 text-center bg-blue-dark  hover:bg-teal hover:text-black rounded-t-lg border-t border-r border-teal">
+                <a href="#ost">Off
+                  Street Tacos</a>
+              </li>
+            </ul>
+
+            <div class="case-study lg:flex bg-blue-light p-5 lg:p-7 rounded-xl rounded-tl-none items-center">
+              <div class="study-content lg:mr-4 max-w-prose">
+                <h3 class="study-title text-2xl lg:text-4xl font-bold pb-4">The Sober Military Movement</h3>
+                <p class="study-sub-title pb-2.5 md:pb-1.5 lg:pb-3 leading-relaxed"><b>Project:</b> This project&apos;s
+                  main
+                  objective was
+                  to
+                  create a
+                  bespoke
+                  theme design that not only met the client&apos;s expectations but also seamlessly integrated with the
+                  WordPress ecosystem. This theme needed to be easily transferable and customizable using the WordPress
+                  admin panel.</p>
+                <p class="study-sub-title pb-2.5 md:pb-1.5 lg:pb-3 leading-relaxed"><b>Challenges:</b> Learning to code
+                  within
+                  the WordPress
+                  ecosystem.
+                  Creating
+                  custom plugins to accomplish specific tasks. Utilizing the Theme Check to make sure my theme was up to
+                  current standards</p>
+                <p class="study-sub-title pb-2.5 md:pb-1.5 lg:pb-3 leading-relaxed"><b>Successes:</b> Able to create a
+                  WordPress theme that
+                  is
+                  reusable by
+                  multiple clients with minimal changes aside from styling. Also able to create custom plug ins and
+                  incorporate existing plugins to enhance the user experience. Including Advanced Custom Fields,
+                  WooCommerce, and bbPress.</p>
+                <p class="study-sub-title leading-relaxed"><b>Tech Stack:</b> HTML, CSS, Sass, PHP, MySQL, Figma,
+                  WordPress,
+                  bbPress,
+                  Advanced Custom Fields</p>
+              </div>
+              <div class="study-cta lg:h-full">
+                <img src="https://placeimg.com/640/640/tech" alt="Placeholder image" class="hidden lg:block">
+                <div class="study-btns lg:mt-4 flex flex-row lg:flex-col xl:flex-row gap-4 justify-center">
+                  <a href="https://www.github.com/atgarner23" target="_blank"
+                    class="px-4 py-2 rounded text-xl bg-orange hover:bg-orange-light text-black block m-2 text-center"><i
+                      class="fa-brands fa-github"></i> Repo</a>
+                  <a href="http://www.agarnerdesigns.com/tsmm" target="_blank"
+                    class="px-4 py-2 rounded text-xl bg-teal hover:bg-teal-light text-black block m-2 text-center"><i
+                      class="fa-regular fa-globe"></i> Site</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="ost" class="main-card sm:h-screen snap-start">
+          <h2 class="font-serif text-4xl lg:text-6xl p-3 tracking-wider">Works</h2>
+          <div class="tabbed">
+            <ul class="sub-nav flex">
+              <li
+                class="sub-items py-1.5 px-3 sm:py-3.5 sm:px-9 text-center bg-blue-dark  hover:bg-teal hover:text-black rounded-t-lg border-t border-l border-teal">
+                <a href="#works">TSMM</a>
+              </li>
+              <li
+                class="sub-items py-1.5 px-3 sm:py-3.5 sm:px-9 text-center bg-blue-dark hover:bg-teal hover:text-black rounded-t-lg border-t border-l border-teal">
+                <a href="#pb">Psychedelia Britannia</a>
+              </li>
+              <li
+                class="sub-items py-1.5 px-3 sm:py-3.5 sm:px-9 bg-blue-light rounded-t-lg text-center hover:text-black">
+                <a href="#ost">Off
+                  Street Tacos</a>
+              </li>
+            </ul>
+
             <div class="case-study lg:flex bg-blue-light p-5 lg:p-7 rounded-xl rounded-tl-none items-center">
               <div class="study-content lg:mr-4 max-w-prose">
                 <h3 class="study-title text-2xl lg:text-4xl font-bold pb-4">The Sober Military Movement</h3>

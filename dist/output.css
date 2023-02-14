@@ -10034,6 +10034,16 @@ html {
   border-color: transparent;
 }
 
+.border-blue-dark {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 43 54 / var(--tw-border-opacity));
+}
+
+.border-teal {
+  --tw-border-opacity: 1;
+  border-color: rgb(51 186 157 / var(--tw-border-opacity));
+}
+
 .border-r-error {
   --tw-border-opacity: 1;
   border-right-color: hsl(var(--er) / var(--tw-border-opacity));
@@ -10904,6 +10914,16 @@ html {
   background-color: rgb(127 220 200 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-blue-dark:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 43 54 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-teal:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 186 157 / var(--tw-bg-opacity));
+}
+
 .hover\:font-bold:hover {
   font-weight: 700;
 }
@@ -10911,6 +10931,11 @@ html {
 .hover\:text-teal-light:hover {
   --tw-text-opacity: 1;
   color: rgb(127 220 200 / var(--tw-text-opacity));
+}
+
+.hover\:text-black:hover {
+  --tw-text-opacity: 1;
+  color: rgb(23 21 26 / var(--tw-text-opacity));
 }
 
 .table .hover\:hover:hovertr:hover th,
@@ -11195,6 +11220,11 @@ html {
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
