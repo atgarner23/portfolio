@@ -11,13 +11,13 @@
 function show_feedback(&$message, &$class, $list = array())
 {
     if (isset($message)) { ?>
-        <div class="alert alert-<?php echo $class; ?> text-white block">
-            <h5 class="text-xl font-semibold"><?php if($class == 'error') { echo <i class="fa-light fa-circle-exclamation"></i>; }else{ echo <i class="fa-light fa-circle-check"></i>; } ?><?php echo $message; ?></h5>
+        <div class="alert <?php echo $class; ?> text-white block">
+            <h5 class="text-xl font-semibold"><?php if($class == 'alert-error') { echo '<i class="fa-light fa-circle-exclamation"></i>'; }else{ echo '<i class="fa-light fa-circle-check"></i>'; } ?><?php echo $message; ?></h5>
             <?php if (!empty($list)) {
 
                 echo '<ul>';
                 foreach ($list as $item) {
-                    echo "<li>$ast; $item</li>";
+                    echo "<li>&ast; $item</li>";
                 }
                 echo '</ul>';
             } ?>

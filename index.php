@@ -318,7 +318,7 @@ require_once('includes/functions.php');
         <section id="contact" class="main-card sm:h-screen snap-start">
           <h2 class="font-serif text-4xl lg:text-6xl p-3 tracking-wider">Get in touch</h2>
           <?php require('includes/parse-contact.php'); ?>
-          <form action="index.php" method="post">
+          <form action="index.php#contact" method="post">
             <!-- <div class="alert alert-error name text-white block">
               <h5 class="text-xl font-semibold"><i class="fa-light fa-circle-exclamation"></i> You Done Fucked Up
                 A-A-Ron</h5>
@@ -327,7 +327,9 @@ require_once('includes/functions.php');
               <p>&ast; Message must be between 15 & 100 characters long</p>
             </div> -->
 
-            <fieldset>
+            <?php show_feedback($feedback, $feedback_class, $errors); ?>
+
+            
               <label for="name">Name:</label>
               <input type="text" id="name" name="name" class=" block
               w-full
@@ -342,7 +344,7 @@ require_once('includes/functions.php');
               transition
               ease-in-out
               m-0
-              focus:text-black focus:bg-white focus:border-teal focus:outline-none input-error">
+              focus:text-black focus:bg-white focus:border-teal focus:outline-none">
               <label for="email">Email:</label>
               <input type="email" name="email" id="email" class="block
               w-full
@@ -375,9 +377,9 @@ require_once('includes/functions.php');
               m-0
               focus:text-black focus:bg-white focus:border-teal focus:outline-none" cols="30"
                 rows="10"></textarea>
-            </fieldset>
+            
             <input type="submit" value="Submit"
-              class="px-4 py-2 mt-2 block rounded text-xl bg-teal hover:bg-teal-light text-black">Submit</input>
+              class="px-4 py-2 mt-2 block rounded text-xl bg-teal hover:bg-teal-light text-black">
               <input type="hidden" name="did_submit" value="1">
           </form>
         </section>

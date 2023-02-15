@@ -1,11 +1,12 @@
 <?php
 
 use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-require 'vendors/PHPMailer-master/src/Exception.php';
-require 'vendors/PHPMailer-master/src/PHPMailer.php';
-require 'vendors/PHPMailer-master/src/SMTP.php';
+require 'vendor/PHPMailer-master/src/Exception.php';
+require 'vendor/PHPMailer-master/src/PHPMailer.php';
+require 'vendor/PHPMailer-master/src/SMTP.php';
 
 //pre-define vars
 $errors = array();
@@ -16,7 +17,7 @@ $message = '';
 //process the contact form if it was submitted
 if (isset($_POST['did_submit'])) {
     //sanitize everything
-    $name = clean_string($_POST['fname']);
+    $name = clean_string($_POST['name']);
     $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
     $message = clean_string($_POST['message']);
     
@@ -55,7 +56,7 @@ if (isset($_POST['did_submit'])) {
             $mailer->AddReplyTo($email, $name);
             $mailer->SetFrom($email, $name);
             $mailer->AddAddress(GMAIL_EMAIL);
-            $mailer->Subject = 'Psyechedelia Brittania - Customer Service Request';
+            $mailer->Subject = 'Portfolio Inquiry';
             $mailer->MsgHTML($body);
 
             //Set up our connection information
@@ -63,7 +64,7 @@ if (isset($_POST['did_submit'])) {
             //show report when down
             $mailer->SMTPDebut = DEBUG_MODE;
             $mailer->SMTPAuth = true;
-            $mailer->SMTPSecure = 'ssl';
+            $mailer->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
             $mailer->Port = 465;
             $mailer->Host = 'smtp.gmail.com';
             //username to use for smtp authentication - use full email address for gmail
@@ -74,22 +75,22 @@ if (isset($_POST['did_submit'])) {
             //All done. send the mail and make sure it worked
             if ($mailer->Send()) {
                 $feedback = 'Thank you for your submission. We will be in touch shortly!';
-                $feedback_class = 'success';
+                $feedback_class = 'alert-success';
             } 
         }catch(phpmailerException $e){
             //php mailer exception
             $feedback = 'Sorry, the server could not send your message at this time.';
-            $feedback_class = 'error';
+            $feedback_class = 'alert-error';
             $errors[] = $e-errorMessage();
         }catch(Exception $e){
             $feedback = 'The mail could not send. Try again later';
-            $feedback_class = 'error';
+            $feedback_class = 'alert-error';
             $errors[] = $e->getMessage();
         }//end try catch for mailer
         
     } else {
         //not valid
         $feedback = 'Please fix the following:';
-        $feedback_class = 'error';
+        $feedback_class = 'alert-error';
     }
 }
