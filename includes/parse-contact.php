@@ -3,10 +3,15 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\OAuth;
+//Alias the League Google OAuth2 provider class
+use League\OAuth2\Client\Provider\Google;
 
-require 'vendor/PHPMailer-master/src/Exception.php';
-require 'vendor/PHPMailer-master/src/PHPMailer.php';
-require 'vendor/PHPMailer-master/src/SMTP.php';
+
+require '../vendor/autoload.php';
+// require 'vendor/PHPMailer-master/src/Exception.php';
+// require 'vendor/PHPMailer-master/src/PHPMailer.php';
+// require 'vendor/PHPMailer-master/src/SMTP.php';
 
 //pre-define vars
 $errors = array();
@@ -64,13 +69,35 @@ if (isset($_POST['did_submit'])) {
             //show report when down
             $mailer->SMTPDebut = DEBUG_MODE;
             $mailer->SMTPAuth = true;
+            $mailer->AuthType = 'XOAUTH2';
             $mailer->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
             $mailer->Port = 465;
             $mailer->Host = 'smtp.gmail.com';
+
+            //XOAUTH
+            $email = 'atgarner23@gmail.com';
+            $clientId = '450607044956-voc6k8qnv7l5plj944qsqgr5si5v57md.apps.googleusercontent.com';
+            $clientSecret = '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';
+            $refreshToken = '';
+            $provider = new Google([
+                'clientId' => $clientId,
+                'clientSecret' => $clientSecret,
+            ]);
+
+            $mailer->setOAuth(
+                new OAuth(
+                    [
+                        'provider' => $provider,
+                        'clientId' => $clientId,
+                        'refreshToken' => $refreshToken,
+                        'userName' => $email,
+                    ]
+                )
+            )
             //username to use for smtp authentication - use full email address for gmail
-            $mailer->Username = GMAIL_EMAIL;
+            //$mailer->Username = GMAIL_EMAIL;
             //password for gmail account
-            $mailer->Password = GMAIL_PASSWORD;
+            //$mailer->Password = GMAIL_PASSWORD;
 
             //All done. send the mail and make sure it worked
             if ($mailer->Send()) {
