@@ -47,8 +47,8 @@ use Stevenmaguire\OAuth2\Client\Provider\Microsoft;
 //@see https://github.com/greew/oauth2-azure-provider
 use Greew\OAuth2\Client\Provider\Azure;
 
- if (!isset($_GET['code']) && !isset($_POST['provider'])) {
-     ?>
+if (!isset($_GET['code']) && !isset($_POST['provider'])) {
+    ?>
 <html>
 <body>
 <form method="post">
@@ -72,7 +72,7 @@ use Greew\OAuth2\Client\Provider\Azure;
 </body>
 </html>
     <?php
-     exit;
+    exit;
 }
 
 require '../../autoload.php';
@@ -101,13 +101,13 @@ if (array_key_exists('provider', $_POST)) {
 }
 
 //If you don't want to use the built-in form, set your client id and secret here
-//$clientId = '450607044956-voc6k8qnv7l5plj944qsqgr5si5v57md.apps.googleusercontent.com';
-//$clientSecret = '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';
+//$providerName = 'Google';
+$clientId = '450607044956-0l2r770qbg91oe4ro6ri38c1cev4hje4.apps.googleusercontent.com';
+$clientSecret = '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';
 
 //If this automatic URL doesn't work, set it yourself manually to the URL of this script
- $redirectUri = (isset($_SERVER['HTTPS']) ? 'https://' : 'http://') . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
-//$redirectUri = 'https://agarnerdesigns.com/vendor/PHPMailer-master/get_oauth_token.php';
-//$redirectUri = 'http://localhost/PHPMailer/redirect';
+//$redirectUri = (isset($_SERVER['HTTPS']) ? 'https://' : 'http://') . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
+$redirectUri = 'https://agarnerdesigns.com/vendor/phpmailer/phpmailer/get_oauth_token.php';
 
 $params = [
     'clientId' => $clientId,

@@ -317,7 +317,7 @@ require_once('includes/functions.php');
         <!-- Contact Form Section -->
         <section id="contact" class="main-card sm:h-screen snap-start">
           <h2 class="font-serif text-4xl lg:text-6xl p-3 tracking-wider">Get in touch</h2>
-          <?php require('includes/parse-contact.php'); ?>
+          <?php require('./includes/parse-contact.php'); ?>
           <form action="index.php#contact" method="post">
             <!-- <div class="alert alert-error name text-white block">
               <h5 class="text-xl font-semibold"><i class="fa-light fa-circle-exclamation"></i> You Done Fucked Up

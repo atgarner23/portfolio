@@ -55,21 +55,21 @@ class OAuth implements OAuthTokenProvider
      *
      * @var string
      */
-    protected $oauthUserEmail = 'atgarner23@gmail.com';
+    protected $oauthUserEmail = '';
 
     /**
      * The client secret, generated in the app definition of the service you're connecting to.
      *
      * @var string
      */
-    protected $oauthClientSecret = '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';
+    protected $oauthClientSecret = '';
 
     /**
      * The client ID, generated in the app definition of the service you're connecting to.
      *
      * @var string
      */
-    protected $oauthClientId = '450607044956-voc6k8qnv7l5plj944qsqgr5si5v57md.apps.googleusercontent.com';
+    protected $oauthClientId = '';
 
     /**
      * The refresh token, used to obtain new AccessTokens.
