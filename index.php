@@ -32,7 +32,7 @@ require_once('includes/functions.php');
         class="text-4xl text-teal focus:text-teal-light active:text-teal-light fixed top-3.5 right-3.5"><i
           class="fa-solid fa-rectangle-xmark"></i></button>
       <nav id="mobileNav"
-        class="mobile-nav bg-blue-dark fixed top-0 left-0 bottom-0 w-1/2 font-serif flex flex-col justify-around items-center">
+        class="mobile-nav bg-blue-dark fixed top-0 left-0 bottom-0 w-1/2 font-serif font-normal flex flex-col justify-around items-center">
 
 
         <a href="index.php" class="block w-12 h-12">
@@ -45,7 +45,7 @@ require_once('includes/functions.php');
           <li class="nav-list-item sm:text-xs"><a href="#contact" class="nav-list-link">Contact</a></li>
           <li class="nav-list-item sm:text-xs"><a href="#resume" class="nav-list-link">Resume</a></li>
         </ul>
-        <div class="socials flex flex-col lg:flex-row gap-2 p-4">
+        <div class="socials flex gap-2 p-4">
           <a href="http://www.github.com/atgarner23" class="nav-social text-4xl shrink" target="_blank"><i
               class="fa-brands fa-github"></i></a>
           <a href="http://www.linkedin.com/in/atgarner23" class="nav-social text-4xl shrink" target="_blank"><i
@@ -55,18 +55,18 @@ require_once('includes/functions.php');
     </div>
 
     <!-- Normal Menu -->
-    <nav class="main-nav bg-blue-dark  w-[10%] flex-col justify-around font-serif items-center hidden sm:flex">
+    <nav class="main-nav bg-blue-dark  w-[10%] flex-col justify-around font-serif font-normal items-center hidden sm:flex">
 
 
       <a href="index.php" class="block w-12 h-12">
         <img src="./assets/img/Asset 1.svg" alt="A. Garner Designs">
       </a>
 
-      <ul class="nav-list flex flex-col justify-around h-1/2">
-        <li class="nav-list-item sm:text-xs md:text-xl"><a href="#works" class="nav-list-link">Works</a></li>
-        <li class="nav-list-item sm:text-xs md:text-xl"><a href="#projects" class="nav-list-link">Projects</a></li>
-        <li class="nav-list-item sm:text-xs md:text-xl"><a href="#contact" class="nav-list-link">Contact</a></li>
-        <li class="nav-list-item sm:text-xs md:text-xl"><a href="./assets/Andrew_Garner_Resume.pdf" target="_blank"
+      <ul class="nav-list flex flex-col justify-around h-1/2 text-center">
+        <li class="nav-list-item p-3 sm:text-xs md:text-base lg:text-xl"><a href="#works" class="nav-list-link">Works</a></li>
+        <li class="nav-list-item p-3 sm:text-xs md:text-base lg:text-xl"><a href="#projects" class="nav-list-link">Projects</a></li>
+        <li class="nav-list-item p-3 sm:text-xs md:text-base lg:text-xl"><a href="#contact" class="nav-list-link">Contact</a></li>
+        <li class="nav-list-item p-3 sm:text-xs md:text-base lg:text-xl"><a href="./assets/Andrew_Garner_Resume.pdf" target="_blank"
             class="nav-list-link">Resume</a></li>
       </ul>
       <div class="socials flex flex-col lg:flex-row gap-2 p-4">
@@ -79,32 +79,35 @@ require_once('includes/functions.php');
 
     <main class="main-body p-10 flex flex-col justify-between mx-auto max-w-5xl">
       <!-- need to figure out he decorative corners -->
-      <p class="email text-orange self-end"><a href="mailto:atgarner23@gmail.com"
-          class="email-link">atgarner23@gmail.com</a>
+      <p class="email text-orange self-end"><a href="javascript:location='mailto:\u0061\u0074\u0067\u0061\u0072\u006e\u0065\u0072\u0032\u0033\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d';void 0"
+          class="email-link"><script type="text/javascript">document.write('\u0061\u0074\u0067\u0061\u0072\u006e\u0065\u0072\u0032\u0033\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d')</script></a>
       </p>
+      <!-- <a href="javascript:location='mailto:\u0061\u0074\u0067\u0061\u0072\u006e\u0065\u0072\u0032\u0033\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d';void 0"><script type="text/javascript">document.write('\u0061\u0074\u0067\u0061\u0072\u006e\u0065\u0072\u0032\u0033\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d')</script></a> -->
 
       <!-- gsap scroll trigger -->
-      <div class="scroll-box overflow-visible sm:overflow-auto snap-none sm:snap-mandatory sm:snap-y">
+      <div class="scroll-box overflow-visible sm:overflow-auto snap-none sm:snap-mandatory sm:snap-y scrollbar-hide">
         <!--this starts the actual scrollable box-->
         <section id="about"
-          class="main-card flex flex-col md:flex-row md:justify-around items-center gap-6 sm:h-screen snap-start">
+          class="main-card flex flex-col md:flex-row md:justify-around items-center gap-6 sm:h-screen snap-start scroll-m-0">
           <div class="flex flex-col md:gap-8">
             <div>
-              <h2 class="card-title font-serif text-5xl lg:text-6xl tracking-wider my-3">Andy Garner</h2>
-              <h3 class="card-sub-title font-sans font-semibold text-2xl lg:text-3xl text-teal my-1.5">Junior Web
+              <h2 class="card-title font-serif font-normal text-5xl lg:text-6xl tracking-wider my-3">Andy Garner</h2>
+              <h3 class="card-sub-title font-sans font-semibold text-2xl lg:text-3xl text-teal my-1.5 ">Web
                 Developer
               </h3>
             </div>
-            <p class="about-me">Recent college graduate and Navy veteran seeking a role as a Junior
-              Web
+            <div>
+            <p class="about-me pb-3 md:pb-2">Recent college graduate and Navy veteran seeking a role as a Web
               Developer to showcase my skills and learn leading industry practices while growing my
               knowledge
-              and skillset. I am proficient in HTML, CSS, JavaScript, and PHP and familiar with WordPress.
+              and skillset. I am proficient in <b class="text-teal">HTML, CSS, JavaScript, and PHP</b> and familiar with WordPress.</p>
+              <p>
               I
               am dedicated to learning and actively strive to be on the cutting edge of the industry best
               practices to help bring a semantic, accessible, and fast experience to the end user. I enjoy
               troubleshooting code to find creative fixes and work around to put forth the most optimized
               product that I can.</p>
+              </div>
           </div>
           <img src="./assets/img/headshot_cropped.png" alt="Portrait of Andy Garner"
             class="w-3/4 md:w-1/3 lg:w-96 lg:h-96 block">
@@ -113,7 +116,7 @@ require_once('includes/functions.php');
 
         <!-- Works Section -->
         <section id="works" class="main-card sm:h-screen snap-start">
-          <h2 class="font-serif text-4xl lg:text-6xl p-3 tracking-wider">Works</h2>
+          <h2 class="font-serif font-normal text-4xl lg:text-6xl p-3 tracking-wider">Works</h2>
           <div class="tabbed">
             <ul class="sub-nav flex">
               <li
@@ -178,7 +181,7 @@ require_once('includes/functions.php');
         </section>
 
         <section id="pb" class="main-card sm:h-screen snap-start">
-          <h2 class="font-serif text-4xl lg:text-6xl p-3 tracking-wider">Works</h2>
+          <h2 class="font-serif font-normal text-4xl lg:text-6xl p-3 tracking-wider">Works</h2>
           <div class="tabbed">
             <ul class="sub-nav flex">
               <li
@@ -230,7 +233,7 @@ require_once('includes/functions.php');
         </section>
 
         <section id="ost" class="main-card sm:h-screen snap-start">
-          <h2 class="font-serif text-4xl lg:text-6xl p-3 tracking-wider">Works</h2>
+          <h2 class="font-serif font-normal text-4xl lg:text-6xl p-3 tracking-wider">Works</h2>
           <div class="tabbed">
             <ul class="sub-nav flex">
               <li
@@ -284,9 +287,9 @@ require_once('includes/functions.php');
 
 
         <!-- Projects section -->
-        <section id="projects" class="main-card h-screen overflow-auto snap-start">
-          <h2 class="font-serif text-4xl lg:text-6xl p-3 pb-4 tracking-wider">Projects</h2>
-          <div class="grid project-grid grid-cols-2 md:grid-cols-3 grid-flow-row gap-6">
+        <section id="projects" class="main-card h-screen snap-start">
+          <h2 class="font-serif font-normal text-4xl lg:text-6xl p-3 pb-4 tracking-wider">Projects</h2>
+          <div class="grid project-grid justify-center grid-cols-2 md:grid-cols-3 grid-flow-row gap-6">
             <a href="https://github.com/atgarner23/WS300_March2022.git" target="_blank">
               <div class="project-grid-items bg-blue-light w-40 lg:w-56 aspect-square p-2 md:p-4 lg:p-8">
                 <h3 class="font-semibold text-2xl">Emo Nite Trivia</h3>
@@ -316,7 +319,7 @@ require_once('includes/functions.php');
         </section>
         <!-- Contact Form Section -->
         <section id="contact" class="main-card sm:h-screen snap-start">
-          <h2 class="font-serif text-4xl lg:text-6xl p-3 tracking-wider">Get in touch</h2>
+          <h2 class="font-serif font-normal text-4xl lg:text-6xl p-3 tracking-wider">Get in touch</h2>
           <?php require('./includes/parse-contact.php'); ?>
           <form action="index.php#contact" method="post">
             <!-- <div class="alert alert-error name text-white block">

@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
-  content: ["./**/*.{html,js}"],
+  content: ["./**/*.{html,js,php}"],
   theme: {
     colors: {
       'white': '#E6F4F7',
@@ -30,5 +30,6 @@ module.exports = {
   plugins: [
     require('@tailwindcss/forms'),
     require('daisyui'),
+    require('tailwind-scrollbar-hide'),
   ],
 }
