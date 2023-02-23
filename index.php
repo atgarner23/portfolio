@@ -47,7 +47,7 @@ require_once('includes/functions.php');
           <li class="nav-list-item sm:text-xs"><a href="#works" class="nav-list-link">Works</a></li>
           <li class="nav-list-item sm:text-xs"><a href="#projects" class="nav-list-link">Projects</a></li>
           <li class="nav-list-item sm:text-xs"><a href="#contact" class="nav-list-link">Contact</a></li>
-          <li class="nav-list-item sm:text-xs"><a href="#resume" class="nav-list-link">Resume</a></li>
+          <li class="nav-list-item sm:text-xs"><a href="./assets/Andrew_Garner_Resume.pdf" target="_blank" class="nav-list-link">Resume</a></li>
         </ul>
         <div class="socials flex gap-2 p-4">
           <a href="http://www.github.com/atgarner23" class="nav-social text-4xl shrink" target="_blank"><i
@@ -124,16 +124,16 @@ require_once('includes/functions.php');
           <div class="tabbed">
             <ul class="sub-nav flex">
               <li
-                class="sub-items py-1.5 px-3 sm:py-3.5 sm:px-9 bg-blue-light rounded-t-lg text-center hover:text-black">
-                <a href="#works">TSMM</a>
+                class="sub-items  bg-blue-light rounded-t-lg text-center hover:text-black">
+                <a href="#works" class="block py-1.5 px-3 sm:py-3.5 sm:px-9">TSMM</a>
               </li>
               <li
-                class="sub-items py-1.5 px-3 sm:py-3.5 sm:px-9 text-center bg-blue-dark hover:bg-teal hover:text-black rounded-t-lg border-t border-r border-teal">
-                <a href="#pb">Psychedelia Britannia</a>
+                class="sub-items text-center bg-blue-dark hover:bg-teal hover:text-black rounded-t-lg border-t border-r border-teal">
+                <a href="#pb" class="block py-1.5 px-3 sm:py-3.5 sm:px-9">Psychedelia Britannia</a>
               </li>
               <li
-                class="sub-items py-1.5 px-3 sm:py-3.5 sm:px-9 text-center bg-blue-dark  hover:bg-teal hover:text-black rounded-t-lg border-t border-r border-teal">
-                <a href="#ost">Off
+                class="sub-items text-center bg-blue-dark  hover:bg-teal hover:text-black rounded-t-lg border-t border-r border-teal">
+                <a href="#ost" class="block py-1.5 px-3 sm:py-3.5 sm:px-9">Off
                   Street Tacos</a>
               </li>
             </ul>
@@ -189,16 +189,16 @@ require_once('includes/functions.php');
           <div class="tabbed">
             <ul class="sub-nav flex">
               <li
-                class="sub-items py-1.5 px-3 sm:py-3.5 sm:px-9 text-center bg-blue-dark hover:bg-teal hover:text-black rounded-t-lg border-t border-l border-teal">
-                <a href="#works">TSMM</a>
+                class="sub-items text-center bg-blue-dark hover:bg-teal hover:text-black rounded-t-lg border-t border-l border-teal">
+                <a href="#works" class="block py-1.5 px-3 sm:py-3.5 sm:px-9">TSMM</a>
               </li>
               <li
-                class="sub-items py-1.5 px-3 sm:py-3.5 sm:px-9 bg-blue-light rounded-t-lg text-center hover:text-black">
-                <a href="#pb">Psychedelia Britannia</a>
+                class="sub-items bg-blue-light rounded-t-lg text-center hover:text-black">
+                <a href="#pb" class="block py-1.5 px-3 sm:py-3.5 sm:px-9">Psychedelia Britannia</a>
               </li>
               <li
-                class="sub-items py-1.5 px-3 sm:py-3.5 sm:px-9 text-center bg-blue-dark  hover:bg-teal hover:text-black rounded-t-lg border-t border-r border-teal">
-                <a href="#ost">Off
+                class="sub-items text-center bg-blue-dark  hover:bg-teal hover:text-black rounded-t-lg border-t border-r border-teal">
+                <a href="#ost" class="block py-1.5 px-3 sm:py-3.5 sm:px-9">Off
                   Street Tacos</a>
               </li>
             </ul>
@@ -241,16 +241,16 @@ require_once('includes/functions.php');
           <div class="tabbed">
             <ul class="sub-nav flex">
               <li
-                class="sub-items py-1.5 px-3 sm:py-3.5 sm:px-9 text-center bg-blue-dark  hover:bg-teal hover:text-black rounded-t-lg border-t border-l border-teal">
-                <a href="#works">TSMM</a>
+                class="sub-items text-center bg-blue-dark  hover:bg-teal hover:text-black rounded-t-lg border-t border-l border-teal">
+                <a href="#works" class="block py-1.5 px-3 sm:py-3.5 sm:px-9">TSMM</a>
               </li>
               <li
-                class="sub-items py-1.5 px-3 sm:py-3.5 sm:px-9 text-center bg-blue-dark hover:bg-teal hover:text-black rounded-t-lg border-t border-l border-teal">
-                <a href="#pb">Psychedelia Britannia</a>
+                class="sub-items text-center bg-blue-dark hover:bg-teal hover:text-black rounded-t-lg border-t border-l border-teal">
+                <a href="#pb" class="block py-1.5 px-3 sm:py-3.5 sm:px-9">Psychedelia Britannia</a>
               </li>
               <li
-                class="sub-items py-1.5 px-3 sm:py-3.5 sm:px-9 bg-blue-light rounded-t-lg text-center hover:text-black">
-                <a href="#ost">Off
+                class="sub-items bg-blue-light rounded-t-lg text-center hover:text-black">
+                <a href="#ost" class="block py-1.5 px-3 sm:py-3.5 sm:px-9">Off
                   Street Tacos</a>
               </li>
             </ul>
@@ -293,7 +293,7 @@ require_once('includes/functions.php');
         <!-- Projects section -->
         <section id="projects" class="main-card h-screen snap-start">
           <h2 class="font-serif font-normal text-4xl lg:text-6xl p-3 pb-4 tracking-wider">Projects</h2>
-          <div class="grid project-grid justify-center grid-cols-2 md:grid-cols-3 grid-flow-row gap-6">
+          <div class="grid project-grid justify-center grid-cols-2 md:grid-cols-3 gap-6">
             <a href="https://github.com/atgarner23/WS300_March2022.git" target="_blank">
               <div class="project-grid-items bg-blue-light w-40 lg:w-56 aspect-square p-2 md:p-4 lg:p-8">
                 <h3 class="font-semibold text-2xl">Emo Nite Trivia</h3>
